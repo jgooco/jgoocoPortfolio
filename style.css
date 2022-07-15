@@ -33,4 +33,8 @@
 .navbar ul li a:hover{
     background-color: whitesmoke;
     color:black;
+    box-shadow: 0, 0, 10px, white; 
 }
+
+/* Home */
+
