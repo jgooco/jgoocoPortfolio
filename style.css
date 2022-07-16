@@ -69,11 +69,13 @@ html{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 30%;
-    left:10%;
+    top: 15%;
+    left:5%;
 }
 .profile{
     border-radius: 50%;
+    width: 350px;
+    height: 350px;
 }
 .headings{
     font-family: century;
@@ -95,6 +97,14 @@ html{
     color:black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 5%;
 }
 
 /* About Section */
@@ -149,16 +159,16 @@ html{
     justify-content: space-around;
     box-sizing: border-box;
 }
-.gallery-card{
+.gallery .gallery-card{
     width: 360px;
     height: 400px;
     box-shadow: 1px 1px 10px grey;
     margin: 10px;
 }
-.gallery-card:hover{
+.gallery .gallery-card:hover{
     transform: scale(1.05);
 }
-.gallery-card img{
+.gallery .gallery-card img{
     display:flex;
     flex-flow: row nowrap;
     width: 100%;
@@ -166,5 +176,70 @@ html{
     object-fit: cover;
     transition: .2s linear;
 }
+
+.gallery .popup{
+    position:fixed;
+    top: 0;
+    left:0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.gallery .popup span{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.gallery .popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+.gallery .popup h3{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    text-align: center;
+}
+.gallery .popup p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    text-align: center;
+}
+
+/*Blog Section*/
+
+
+/*Contact Section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:whitesmoke;    
+    padding: 20px;
+    
+}
+
+
+
+
+
 
 

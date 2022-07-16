@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Go-Oco</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <nav class="navbar">
@@ -13,18 +14,26 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#project">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <div class="main">
-            <img src="/images/292936632_344141501095198_110334308393121818_n.jpg" class ="profile" height="250" width="250">
+            <img src="/images/i-gJGdNdz-XL.jpg" class ="profile" height="250" width="250">
             <h1 class="headings">Jonathan <br> Go-Oco</h1>
             <button class="btn">
                 Contact Me
             </button>
+            <br>
+            <button class="btn">
+                Download CV
+            </button>
+        </div>
+        <div class="socials">
+            <div>GH</div>
+            <div>LI</div>
         </div>
     </section>
 
@@ -48,17 +57,63 @@
             <div class="gallery-card">
                 <img src="/Projects/Gantry.png"alt="">
                 <h3>Repurpose Gantry</h3>
-                <p class="subtext">Repurposed an engraver gantry via an Arduino Mega 2560 to control the stepper motors through joystick control.</p>
-            </div>
+                <p class="subtext">Repurposed an engraver gantry via an Arduino Mega 2560 to control the stepper motors through joystick control for X, Y, and Z traversal. Rewired and soldered device to connect to Arduino board and external power supply. Attached a multimeter pin for testing purposes. Added a camera for as a replacement for a microscope.</p>
+            </div>         
+            
             <div class="gallery-card">
                 <img src="/Projects/GUI_Test_Bench_FF.png"alt="">
                 <h3>C# GUI for Test Bench Form</h3>
                 <p class="subtext">Progammed a GUI in C# that could take the readings from a digital multimeter. Users open up a test bench sheet, fill out information, collect readings automatically or manually, and export the completed sheet.</p>
-            </div>                
+            </div>
+
+            <div class="gallery-card">
+                <img src="/images/mp3.jpg"alt="">
+                <h3>CMPE 146 FreeRTOS MP3 Project</h3>
+                <p class="subtext">In a 3-person group, created an MP3 player using a C-Programmed FreeRTOS Microcontroller Board. Extracted MP3 files from onboard SD card through an external MP3 decoder via SPI communication and GPIO pins, created various FreeRTOS tasks for functionality, and displayed MP3 file meta data on external LCD screen via UART communication and GPIO pins.</p>
+            </div>
+                            
             <!--Add more projects here
-                <div class="gallery-card"></div>
-            <div class="gallery-card"></div> -->
+                <div class="card"></div>
+            <div class="card"></div> -->
+            <div class="popup">
+                <span>&times;</span>
+                <img src="/Projects/Gantry.png"alt="">
+                </div>
+            <div class="popup">
+                <span>&times;</span>
+                <img src="/Projects/GUI_Test_Bench_FF.png"alt="">
+                </div>
+            
         </div>
+        
+        <script>
+            document.querySelectorAll('.gallery-card img').forEach(image=>{
+              image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+              }
+            });
+
+            document.querySelector('.popup span').onclick = () =>{
+                document.querySelector('.popup').style.display = 'none';
+            }
+             
+        </script> 
+        
+    </section>
+
+    <section id="blog">
+        <h1 class="headings">BLOG</h1>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="emailt" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" class="msg msg" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
     </section>
 </body>
 </html>
