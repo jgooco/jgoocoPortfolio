@@ -19,6 +19,7 @@ html{
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top:0;
+    z-index: 100;
 }
 .navbar ul{
     display: flex;
@@ -27,7 +28,7 @@ html{
 }
 .navbar ul li{
     font-family: century;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .navbar ul li a{
@@ -40,6 +41,18 @@ html{
     background-color: whitesmoke;
     color:black;
     box-shadow: 0, 0, 10px, white; 
+}
+.hamburger {
+    display: none;
+}
+@media only screen and (max-width: 1000px){
+    .hamburger {
+        display:block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+    }
 }
 
 /* Home */
@@ -101,11 +114,15 @@ html{
 .socials{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    right: 5%;
+    position:absolute;
+    top: 40%;
+    right: 5%;    
 }
+.socials .social{
+    margin: 10px;
+    color:white;
+}
+
 
 /* About Section */
 #about{
@@ -161,7 +178,7 @@ html{
     align-items: center;
 }
 .gallery .gallery-card{
-    width: 360px;
+    width: 400px;
     height: 550px;
     box-shadow: 1px 1px 10px grey;
     margin: 10px;
@@ -175,7 +192,14 @@ html{
     flex-flow: row nowrap;
     width: 100%;
     height: 50%;
-    object-fit: cover;
+    object-fit: fill;
+    transition: .2s linear;
+}
+.gallery .gallery-card .tempsense_img{
+    display:flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    object-fit:contain;
     transition: .2s linear;
 }
 
@@ -199,7 +223,7 @@ html{
     font-weight: bold;
 }
 
-.gallery .popup{
+/* .gallery .popup{
     position:fixed;
     top: 0;
     left:0;
@@ -228,7 +252,7 @@ html{
     border-radius: 5px;
     width: 750px;
     object-fit: cover;
-}
+} */
 .gallery .popup h3{
     position: absolute;
     top: 75%;
@@ -246,21 +270,75 @@ html{
     text-align: center;
 }
 .swiper {
-    width: 1280px;
+    width: 100%;
     height: 720px;
+    z-index: -1;
   }
+.swiper-slide {
+    text-align: center;   
+    z-index: -1;
+    
+}
+
 /*Blog Section*/
 
 
 /*Contact Section*/
 #contact{
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
     color:whitesmoke;    
-    padding: 20px;
-    
+    padding: 20px;    
 }
+.form-submit{
+    width:50%;
+}
+.form-submit form {
+    width: 100%;
+}
+.form-submit .form-row{
+    display: flex;
+    justify-content: space-between;
+}
+.form-row .form-control{
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    padding: 10px 5px;
+}
+.form-row .form-control:focus {
+    outline: 0;  
+      
+}
+.form-submit textarea{
+    width:100%;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+    resize: none;
+    margin-top: 5px;
+    padding: 10px 5px;
+}
+.form-submit textarea:focus{
+    outline:0;
+}
+.form button{
+    width:100%;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    padding:20px;
+}
+.form button:hover{
+    cursor: pointer;
+}
+
+
+
+
 
 
 
