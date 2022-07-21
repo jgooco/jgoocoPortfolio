@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(fonts/AvenirLTStd-Roman.otf) format('opentype');
+}
 body{
-    font-family: century, sans-serif;
+    font-family:  "Avenir" ,century, sans-serif;
 }
 *{
     margin: 0;
@@ -26,8 +30,9 @@ html{
     list-style: none;
     margin: 20px 0px;
 }
+
 .navbar ul li{
-    font-family: century;
+    /* font-family: century, sans-serif; */
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -52,6 +57,28 @@ html{
         background-color: transparent;
         color: white;
         font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    .navbar ul{
+        display: none;
+        align-self: flex-start;
+        background-color: transparent;               
+    }
+    .navbar ul.show {
+        display: block;
+    }
+    .navbar ul li{
+        margin-top: 10px;
+    }
+    .navbar ul li a:hover{
+        background-color: transparent;
+        color:black;
+        box-shadow: 0, 0, 0px, white; 
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
@@ -91,7 +118,7 @@ html{
     height: 350px;
 }
 .headings{
-    font-family: century;
+    /* font-family: century; */
     font-size: 3rem;
     text-align: center;
     margin: 40px 0px;
@@ -152,12 +179,12 @@ html{
     padding: 10px;
 }
 #intro h2{
-    font-family: century, sans-serif;
+    /* font-family: century, sans-serif; */
     font-size: 2rem;
     margin-bottom: 20px;
 }
 #intro p{
-    font-family: century, sans-serif;
+    /* font-family: century, sans-serif; */
     font-size: 1.5rem;
 }
 
@@ -294,7 +321,7 @@ html{
     padding: 20px;    
 }
 .form-submit{
-    width:50%;
+    width:80%;
 }
 .form-submit form {
     width: 100%;
@@ -335,6 +362,11 @@ html{
 .form button:hover{
     cursor: pointer;
 }
+
+
+
+
+
 
 
 

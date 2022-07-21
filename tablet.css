@@ -32,3 +32,16 @@
     text-align: center;
     padding: 10px;
 }
+
+/* Contact  */
+.form-submit{
+    width: 80%;
+}
+.form-submit .form-row{
+    display: flex;
+    flex-direction: column;
+}
+.form-row .form-control{    
+    width: 100%;
+    margin-top: 5px;
+}

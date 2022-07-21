@@ -13,7 +13,7 @@
     
 </head> 
     <nav class="navbar">
-        <ul>
+        <ul id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#project">Projects</a></li>
@@ -23,6 +23,17 @@
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
     </nav>
 
     <section id="home">

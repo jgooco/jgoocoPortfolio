@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog #1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="blog-article.css">
+    <link rel="stylesheet" href="article-images.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    
+</head> 
+    
+<body>
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#about">About Me</a></li>
+            <li><a href="/index.html#project">Projects</a></li>
+            <li><a href="/index.html#blog">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+
+    <section class="blog">
+        <article class="biggest-regret-article">
+            <header class="title-container">
+                <h1>My Biggest Regret As A Computer Engineering Graduate</h1>
+                <p style="font-size:0.8rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    July, 2022
+                    &#x2022 6 min read
+                </p> <!--create publish time here-->
+            </header>            
+            <p>
+                I graduated with a B.S. in Computer Engineering back in August of 2021. 
+                Back then, I had just quit my job at a local sandwich shop and had begun my job hunt to become a Software Engineer. 
+                I was confident and excited about where the road ahead would lead me.
+            </p>
+            <p>
+                Fast forward just under a year later and… I am without a Software Engineering job, though, not without a lack of trying. 
+                In fact, I have received quite a few interviews, 
+                including getting to the final interview round at a 
+                <strong><a class="blog-links" href="https://fortune.com/2021/10/29/faang-mamaa-jim-cramer-tech-facebook-meta/" target="_blank">MAMAA(formerly FAANG)</a></strong> company, 
+                or whatever the acronym is nowadays. 
+                However, as evident by the fact that I am not celebrating that I got the job, 
+                I did not in fact pass that stage of the interview process for this particular company.
+            </p>
+            <p>
+                Through all the interviews that I have experienced, I have learned many lessons along the way, which have also enlightened me to my biggest regret…
+            </p>
+            <figure class="size-2">
+                <img src="/images/pexels-ds-stories-6005414.jpg" alt="" srcset="">
+            </figure>            
+            <h2>
+                <em><strong>I underestimated how personal projects could impact opportunities in finding a Software Engineering job.</strong></em>
+            </h2>
+            <p>
+                Now, what do I mean by this? On my resume, I actually have some unique projects compared to some other right out of college CS, SE, or CE/CMPE graduates.
+                I have worked on a <a class="blog-links" href="/Projects/Gantry.png" target="_blank">prototype device for my internship.</a> 
+                I have worked on a <a href="https://github.com/jgooco/FreeRTOS-MP3-Project" class="blog-links" target="_blank">microcontroller board to create an MP3 player using FreeRTOS.</a> 
+                But, in terms of the simple projects, I had neglected them. I had not built even a simple portfolio website. I had not worked on a mobile app.
+                I haven’t even dared to touch on figuring out how to use a database. And why is that?
+            </p>
+            <p>
+                Well, I, the naive college graduate that I am, believed the projects I had and the skills 
+                I had gained through my various classes would be enough to land me the job of my dreams. 
+                And well, it has not worked out the way I thought.
+            </p>
+            <p>
+                As I said before, I have recieved interviews, and I have gone to the final rounds of a couple, so it’s not that I believe I won’t get a job someday soon. 
+                It’s more that, because I didn’t dabble in doing more personal projects, I have limited my opportunities in what jobs I could apply for.
+            </p>
+            <p>
+                For example, many companies are looking for Front End, Back End, or Full Stack Engineers to work on their websites. 
+                And, since I had not even learned HTML outside of a random class in middle school, I have thus avoided applying for such jobs.
+            </p>
+            <p>
+                I took (and dropped) an elective course on creating mobile applications, as the class required that I needed a MacBook to code, and not having a MacBook, 
+                I dropped the class after the first day. That soured me on wanting to create Andriod or IOS mobile apps, and thus, any job postings like Mobile Application Engineer, 
+                I scrolled past.
+            </p>
+            <p>
+                Recently, I caught Covid, right around the time I was waiting on the MAMAA company to get back to me on if I would move past the final interview round. 
+                Staying in my room, I had much time to reflect on my journey nearly 1 year after graduating. 
+                Being told I was not able to move on from that final round at this MAMAA company made me ponder my thoughts even more.
+                 And I realized how much I have limited myself on what opportunities to pursue.
+            </p>
+            <p>
+                Despite being rejected in the final interview rounds for a MAMAA company, 
+                it actually <strong>increased</strong> my confidence that I had what it takes to land a job sooner rather than later. 
+                However, I have changed my mentality on limiting myself. I will no longer stay regretting not having more personal projects, or learning new skills. 
+            </p>
+            <h2>How you may ask?</h2>
+            <p>Well, first, I created this website. This website will be used both as my Portfolio and my Blog. To code this website, 
+            I had to learn <em>HTML</em> and <em>CSS</em> to add structure and style to my website. <a class="blog-links" href="https://www.youtube.com/c/BroCodez" target:"_blank">Bro Code</a> has some great tutorials on both, both videos clocking in at an hour long. 
+            Bro Code teaches in a more practical manner, explaining languages in a easy to learn fashion, and I suggest if you are looking to wanting to make your own website, 
+            Bro Code is your guy to learn from.
+            </p>
+            <figure class="size-2">
+                <img src="/images/bro_code_html.jpg" alt="" srcset="">
+                <br>
+                <img src="/images/bro_code_css.jpg" alt="" srcset="">
+            </figure>
+            <figcaption> <p><em>Bro Code</em> has some amazing tutorials for both HTML & CSS, and a lot more.</p> </figcaption>
+        </article>
+        
+    </section>
+
+
+
+    <!-- <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/el/xifare" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="social">
+
+        </div>
+    </footer> -->
+</body>
+</html>
