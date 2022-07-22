@@ -3,7 +3,7 @@
     src: url(fonts/AvenirLTStd-Roman.otf) format('opentype');
 }
 body{
-    font-family:  "Avenir" ,century, sans-serif;
+    font-family:  "Avenir" , century, sans-serif;
 }
 *{
     margin: 0;
@@ -357,11 +357,43 @@ html{
     color: rgba(89, 114, 255, 1);
     transition: all ease 0.3s;
 }
+.blog-text p{
+    color: #9b9b99;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+.blog-text a:hover{
+    color: rgba(89, 114, 255, 1);
+    transition: all ease 0.3s;
+}
 
 @media(max-width: 1250px){
     .blog-box{
         width: 300px;
     }
+}
+.read-more-blogs{
+    align-content:flex-end;
+}
+.read-more-blogs{
+    color: black;
+    opacity: 0.8;
+}
+.read-more-blogs:hover{
+    opacity: 1;
+    transition: all ease .3s;
+}
+.read-more-blogs:visited{
+    color: black;
+    opacity: 0.8;
 }
 
 

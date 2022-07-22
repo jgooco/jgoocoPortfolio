@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Biggest Regret As A Computer Engineering Graduate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">    
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -18,11 +18,11 @@
 <body>
     <nav class="navbar">
         <ul id="nav-list">
-            <li><a href="/index.html#home">Home</a></li>
-            <li><a href="/index.html#about">About Me</a></li>
-            <li><a href="/index.html#project">Projects</a></li>
-            <li><a href="/index.html#blog">Blog</a></li>
-            <li><a href="/index.html#contact">Contact</a></li>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
         </ul>
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
@@ -40,14 +40,20 @@
         </script>
     </nav>
 
-    <section class="blog">
+    <section class="blog-page">
+        
         <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
             <header class="title-container">
                 <h1>My Biggest Regret As A Computer Engineering Graduate</h1>
                 <p style="font-size:0.8rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
                     July, 2022
                     &#x2022 6 min read
                 </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    I graduated nearly a year ago, but I am still on the job hunt. What is my biggest regret,
+                    and what I am doing to solve it?
+                </h3>
             </header>            
             <p>
                 I graduated with a B.S. in Computer Engineering back in August of 2021. 
@@ -171,7 +177,7 @@
 
 
 
-    <!-- <section id="contact">
+    <section id="contact">
         <h1 class="headings">CONTACT</h1>
         <div class="form-submit">
             <form action="https://formsubmit.co/el/xifare" method="POST" class="form">
@@ -187,9 +193,19 @@
         
     </section>
     <footer>
-        <div class="social">
-
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
         </div>
-    </footer> -->
+        <ul class="anchor-link">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
 </body>
 </html>

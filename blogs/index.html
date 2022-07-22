@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blogs.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>    
+
+    <section id="blogs">
+        <h1 class="headings" id="blog-h1">BLOGS</h1>        
+        <div class="blogs-blog-container">
+            <div class="blogs-blog-box">
+                <div class="blogs-blog-img">
+                    <img src="/images/pexels-ds-stories-6005414.jpg" alt="" srcset="">
+                </div>
+                <div class="blogs-blog-text">
+                    <span>July , 2022
+                        &#x2022 6 min read
+                    </span>                    
+                    <a href="/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html" class="blog-title">My Biggest Regret As A Computer Engineering Graduate</a>
+                    <p>I graduated nearly a year ago, but I am still on the job hunt. What is my biggest regret,
+                        and what I am doing to solve it?</p>
+                    <a href="/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html">Read More</a>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/el/xifare" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <ul class="anchor-link">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>    
+</body>
+</html>

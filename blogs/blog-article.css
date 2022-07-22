@@ -17,6 +17,19 @@ article *{
         grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;;
     }
 }
+.back-to-blogs{
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.back-to-blogs:hover{
+    opacity: 1;
+    transition: all 
+    ease 0.3s;
+}
+.back-to-blogs:visited{
+    color: white;
+}
 .blog-articles{
     justify-content: center;
     align-items: center;
@@ -28,7 +41,7 @@ article *{
 .title-container{
     text-align: center;
 }
-h1, h2, h3, time, h3{    
+h1, h2, h3, time{    
     margin-top: 3.5rem;
 }
 h1, h2, h3, time, h3{
@@ -43,6 +56,10 @@ p{
     margin-top: 0;
     padding: 0 0;
     margin-bottom: 1.75rem;
+}
+.subheading{
+    color:rgb(197, 197, 197);
+    margin-top: -1.5rem;
 }
 
 h1{
@@ -60,7 +77,7 @@ time{
     font-weight: 700;
 }
 h3{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 p{
