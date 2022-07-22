@@ -9,7 +9,6 @@
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">    
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -23,34 +22,24 @@
         </ul>
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
-        </button>
-
-        <script>
-            const hamburgerButton = document.getElementById('hamburger')
-            const navList= document.getElementById('nav-list')
-
-            function toggleButton(){
-                navList.classList.toggle('show')
-            }
-
-            hamburgerButton.addEventListener('click', toggleButton)
-        </script>
+        </button>        
     </nav>
 
     <section id="home">
         <div class="main">
             <!--<img src="/images/i-gJGdNdz-XL.jpg" class ="profile" height="250" width="250"> -->
             <h1 class="headings">Jonathan <br> Go-Oco</h1>
+            <a href="#contact">
+                <button class="btn">
+                    Contact Me
+                </button>
+            </a>            
+            <!-- <br>
             <button class="btn">
-                Contact Me
-            </button>
-            <br>
-            <button class="btn">
-                Download CV
-            </button>
+                Download Resume
+            </button> -->
         </div>
         <div class="socials">
-
             <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
 
             <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
@@ -61,7 +50,7 @@
     <section id="about">
         <h1 class="headings">ABOUT ME</h1>
         <div id="pic">            
-            <img src="/images/292936632_344141501095198_110334308393121818_n.jpg" alt="">
+            <img src="/images/JonathanGo-Oco.jpg" alt="Jonathan Go-Oco About Me Picture">
             <div id="intro">
                 <h2>Jonathan Go-Oco</h2>
                 <p> Born and raised in the Bay Area. <br>
@@ -78,7 +67,7 @@
                 <div class="swiper-wrapper">
                     <div class="gallery swiper-slide">
                         <div class="gallery-card">                    
-                            <img class="tempsense_img" src="/Projects/tempsense.png"alt="">
+                            <img class="tempsense_img" src="/Projects/tempsense.png"alt="tempsense app">
                             <h3>TempSense Senior Project</h3>
                             <br>
                             <p class="subtext">Created an affordable IoT system in response to Covid-19. System can record heart rate, blood saturation, and body temperature to be displayed on the TempSense app. Data is sent via Arduino to Raspberry Pi via serial communiation. From there, a Python script sends an HTTP Post Request to store to Google Firebase for storage. That data is then displayed on TempSense app.</p>
@@ -89,7 +78,7 @@
                     </div>
                     <div class="gallery swiper-slide">
                         <div class="gallery-card">                    
-                            <img src="/images/mp3.jpg"alt="">
+                            <img src="/images/mp3.jpg"alt="FreeRTOS MP3 Player">
                             <h3>CMPE 146 FreeRTOS MP3 Project</h3>
                             <br>
                             <p class="subtext">In a 3-person group, created an MP3 player using a <strong>C & C++</strong> Programmed <strong>FreeRTOS Microcontroller</strong> Board. Extracted MP3 files from onboard SD card through an external MP3 decoder via <strong>SPI</strong> communication and GPIO pins, created various FreeRTOS tasks for functionality, and displayed MP3 file meta data on external LCD screen via <strong>UART</strong> communication and GPIO pins.</p>
@@ -99,7 +88,7 @@
                     </div>
                     <div class=" gallery swiper-slide">
                         <div class="gallery-card ">                    
-                            <img src="/Projects/GUI_Test_Bench_FF.png"alt="">   
+                            <img src="/Projects/GUI_Test_Bench_FF.png"alt="Gui for Test Bench">   
                             <h3>C# GUI for Test Bench Form</h3>             
                             <br>
                             <p class="subtext">Progammed a <u><strong>GUI</strong></u> in <u><strong>C#</strong></u> that could take the readings from a digital multimeter. Users open up a test bench sheet, fill out information, collect readings automatically or manually, and export the completed sheet.</p>
@@ -107,7 +96,7 @@
                     </div>
                     <div class="gallery swiper-slide">
                         <div class="gallery-card">                    
-                        <img src="/Projects/Gantry.png"alt="">  
+                        <img src="/Projects/Gantry.png"alt="prototype gantry device">  
                         <h3>Repurpose Gantry</h3>          
                         <br>
                         <p class="subtext">Repurposed an engraver gantry via an <strong>Arduino</strong> Mega 2560 to control the stepper motors through joystick control for X, Y, and Z traversal. Rewired and soldered device to connect to Arduino board and external power supply. Attached a multimeter pin for testing purposes. Added a camera for as a replacement for a microscope.</p>
@@ -142,43 +131,7 @@
             }
              
         </script>  -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
-    <!-- Initialize Swiper -->
-        <script>
-        var swiper = new Swiper(".mySwiper", {
-            watchSlidesProgress: true,
-            slidesPerView: 3,
-            spaceBetween: 25,
-            loop: true,
-            centerSlide: 'true',
-            fade: 'true',
-            grabCursor: 'true',            
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                780: {
-                    slidesPerView: 2,
-                },
-                1150: {
-                    slidesPerView: 3,
-                },
-
-            },
-        });
-        </script>
+        
         
     </section>
 
@@ -190,7 +143,7 @@
         <div class="blog-container">
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="/images/pexels-ds-stories-6005414.jpg" alt="" srcset="">
+                    <img src="/images/regret-thumb.png" alt="Regret spelled out" srcset="">
                 </div>
                 <div class="blog-text">
                     <span>July , 2022</span>
@@ -203,9 +156,7 @@
         </div>
         <a href="/blogs/" class="read-more-blogs">To Blogs</a>
         
-    </section>
-
-    
+    </section>    
 
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
@@ -222,6 +173,7 @@
         </div>
         
     </section>
+
     <footer>
         <div class="footer-social">
             <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
@@ -237,6 +189,55 @@
         <div class="copy">
             <p>Jonathan Go-Oco &copy 2022</p>
         </div>
-    </footer>    
+    </footer>  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',            
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            780: {
+                slidesPerView: 2,
+            },
+            1150: {
+                slidesPerView: 3,
+            },
+
+        },
+    });
+    </script>  
+    <script>
+        const hamburgerButton = document.getElementById('hamburger')
+        const navList= document.getElementById('nav-list')
+
+        function toggleButton(){
+            navList.classList.toggle('show')
+        }
+
+        hamburgerButton.addEventListener('click', toggleButton)
+    </script>
+        
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -138,6 +138,10 @@ html{
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
 }
+.btn a{
+    color: white;
+    text-decoration: none;
+}
 .socials{
     display: flex;
     flex-direction: column;
@@ -148,6 +152,11 @@ html{
 .socials .social{
     margin: 10px;
     color:white;
+    opacity: .7;
+}
+.socials .social:hover{
+    opacity: 1;
+    transition: all ease .3s;
 }
 
 
@@ -213,6 +222,7 @@ html{
 }
 .gallery .gallery-card:hover{
     transform: scale(1.05);
+    transition: all ease 0.3s;
 }
 .gallery .gallery-card img{
     display:flex;
@@ -315,6 +325,9 @@ html{
     flex-direction: column;
     padding: 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(89, 114, 255, 1);
+    color: white;
+
 }
 .blog-container{
     display: flex;
@@ -324,10 +337,14 @@ html{
     flex-wrap: wrap;
 }
 .blog-box{
-    width: 350px;
+    width: 400px;
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px;
+}
+.blog-box:hover{
+    transform: scale(1.05);
+    transition: all ease 0.3s;
 }
 .blog-img{
     width: 100%;
@@ -384,15 +401,17 @@ html{
     align-content:flex-end;
 }
 .read-more-blogs{
-    color: black;
+    color: white;
     opacity: 0.8;
+    font-size: larger;
 }
+
 .read-more-blogs:hover{
     opacity: 1;
     transition: all ease .3s;
 }
 .read-more-blogs:visited{
-    color: black;
+    color: white;
     opacity: 0.8;
 }
 
