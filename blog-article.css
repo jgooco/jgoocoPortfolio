@@ -68,6 +68,8 @@ p{
 }
 figure * {
     display: block;
+    justify-content: center;
+    align-content: center;
 }
 figcaption {
     margin-top: 0.5rem;
@@ -75,5 +77,5 @@ figcaption {
     justify-content: center;
 }
 figcaption p{
-    color:rgb(241, 241, 241);
+    color:rgba(241, 241, 241, 0.5);
 }
