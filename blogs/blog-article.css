@@ -98,3 +98,9 @@ figcaption {
 figcaption p{
     color:rgba(241, 241, 241, 0.5);
 }
+
+.buy-me-boba-btn{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}

@@ -70,6 +70,7 @@
     transition: all ease 0.3s;
 }
 
+
 @media(max-width: 1250px){
     .blogs-blog-box{
         width: 300px;
