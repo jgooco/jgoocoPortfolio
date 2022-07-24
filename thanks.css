@@ -1,0 +1,17 @@
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.thank-you-message{
+    text-align: center;    
+}
+@media screen and (max-width:1000px) {
+    .thank-you-message{
+        width: 90%;
+    }
+}

@@ -71,6 +71,8 @@ h2{
 }
 .main-points-header-2{
     text-align: center;
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
 }
 time{
     font-size: 1rem;

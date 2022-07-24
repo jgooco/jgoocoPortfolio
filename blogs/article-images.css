@@ -16,7 +16,13 @@
 }
 
 .size-3#thumbnail{
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.size-4#thumbnail{
+    margin-top: 40px;
+    margin-bottom: -40px;
 }
 
 .iframe-container{
