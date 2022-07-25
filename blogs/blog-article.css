@@ -99,8 +99,16 @@ figcaption p{
     color:rgba(241, 241, 241, 0.5);
 }
 
+
+.support-boba-container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 .buy-me-boba-btn{
     display: flex;
     justify-content: left;
     margin-top: 20px;
+}
+.sharethis-inline-share-buttons{
+    margin-bottom: 50px;
 }
