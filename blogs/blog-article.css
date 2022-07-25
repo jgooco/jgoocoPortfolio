@@ -108,6 +108,7 @@ figcaption p{
     display: flex;
     justify-content: left;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .sharethis-inline-share-buttons{
     margin-bottom: 50px;
