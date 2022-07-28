@@ -16,8 +16,17 @@
     width: 300px;
     height: 300px;
 }
+.about-me{
+    flex-direction: column;
+}
 #intro h2{
     font-size: 1.5rem;
+}
+.skills{
+    margin-left: 10px;
+}
+.skills li{
+    padding-left: 0px;
 }
 
 /* Portfolio */
@@ -48,6 +57,16 @@
 .blog-box{
     margin: 20px 10px;
     width: 100%;
+}
+.blog-title-container{    
+    margin-bottom: 50px;
+}
+.description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blog-text a{
+    margin-top: 20px;
 }
 #blog{
     padding: 20px;

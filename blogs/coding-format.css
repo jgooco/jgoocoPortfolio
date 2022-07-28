@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(fonts/AvenirLTStd-Roman.otf) format('opentype');
+}
+
+.pre-container{
+    display:block;
+    
+}
+pre{
+    display: block;
+    white-space: pre;
+    margin: 1em, 0px;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 30px!important;
+}
+pre code{
+    padding: 0;
+}
+code{
+    word-break: break-all!important;
+    word-wrap: break-word!important;
+}
+pre[class*=language-]{
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+
+code[class*=language-] , pre[class*=language-]{
+    font-family: "Avenir" , century, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    tab-size:4;
+    hyphens: none;
+    white-space: pre-wrap!important;
+}
+
+
+.comment{
+    opacity: 0.5;
+}
+.keyword{
+    color:blueviolet;
+}
+.punctuation{
+    color: #ccc;
+} 
+.function{
+    color:rgb(255, 161, 38)
+}

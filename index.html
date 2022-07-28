@@ -74,8 +74,11 @@
 
     <section id="about">
         <h1 class="headings">ABOUT ME</h1>
-        <div id="pic">            
-            <img src="/images/JonathanGo-Oco.jpg" alt="Jonathan Go-Oco About Me Picture">
+        <div class="about-me">
+            <div id="pic">            
+                <img src="/images/JonathanGo-Oco.jpg" alt="Jonathan Go-Oco About Me Picture">
+                
+            </div>
             <div id="intro">
                 <h2>Jonathan Go-Oco</h2>
                 <p> Hello there! My name is Jonathan, and I enjoy learning new things, and finiding ways to use them in my everyday life.
@@ -85,7 +88,7 @@
                 <br>
                 <p>
                     I love working out, watching the Warriors and the NBA, watching anime, and seeing the next Marvel or DC project. I am currently starting a 
-                    <a href="/blogs/index.html" target="_blank">blog</a> to talk about my personal and profession journey through
+                    <a href="/blogs/index" target="_blank">blog</a> to talk about my personal and profession journey through
                     the tech industry and life! I am also the host of The GoLoco Show, which you can find on 
                     <a href="https://anchor.fm/thegolocoshow" target="_blank">Anchor</a> 
                     and <a href="https://www.youtube.com/channel/UC4DSwB13gqtgi_TZTLpaMGg" target="_blank">YouTube</a>!
@@ -104,6 +107,7 @@
                 </p>
             </div>
         </div>
+        
     </section>
 
     <section id="project">
@@ -188,16 +192,28 @@
         <div class="blog-container">
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="/images/regret-thumb.png" alt="Regret spelled out" srcset="">
+                    <img src="/images/js30.png" alt="Learning JS in 30 Days Thumbnail" srcset="">
+                </div>
+                <div class="blog-text">
+                    <span>July 28, 2022</span>
+                    <div class="blog-title-container"><a href="/blogs/learning-javascript-30-days.html" class="blog-title">Learning JavaScript in 30 Days</a></div>
+                    <div class="description"> <p>I have decided to learn JavaScript in 30 days (or so). Let the journey to 30 (days) begin!</p> </div>                   
+                                       
+                    <a href="/blogs/learning-javascript-30-days.html">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="/images/regret-thumb.png" alt="My Biggest Regret Thumbnail" srcset="">
                 </div>
                 <div class="blog-text">
                     <span>July 24, 2022</span>
-                    <a href="blogs/my-biggest-regret-as-a-computer-engineering-graduate.html" class="blog-title">My Biggest Regret As A Computer Engineering Graduate</a>
-                    <p>I graduated nearly a year ago, but I am still on the job hunt. What is my biggest regret,
-                        and what I am doing to solve it?</p>
-                    <a href="blogs/my-biggest-regret-as-a-computer-engineering-graduate.html">Read More</a>
+                    <div class="blog-title-container"><a href="https://jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate" class="blog-title">My Biggest Regret As A Computer Engineering Graduate</a></div>
+                    <div class="description"><p>I graduated nearly a year ago, but I am still on the job hunt. What is my biggest regret,
+                        and what I am doing to solve it?</p></div>                    
+                    <a href="https://jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate">Read More</a>
                 </div>
-            </div>
+            </div>            
         </div>
         <a href="/blogs/" class="read-more-blogs">To Blogs</a>
         
@@ -208,7 +224,7 @@
         <div class="form-submit">
             <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks">
                 <div class="form-row">
                     <input name="name" class="form-control" placeholder="Full Name" required>
                     <input name="email" class="form-control" placeholder="Email" required>
