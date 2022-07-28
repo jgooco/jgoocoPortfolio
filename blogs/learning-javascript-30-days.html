@@ -11,13 +11,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Biggest Regret As A Computer Engineering Graduate</title>
+    <title>Learning JavaScript in 30 Days</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
     <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="blog-article.css">
     <link rel="stylesheet" href="article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
     <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
     
@@ -56,9 +57,276 @@
         
         <article class="blog-articles">
             <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/images/js30.png" alt="30 Days of javascript" srcset="">
+            </figure>
 
+            <header class="title-container">
+                <h1>Learning JavaScript in 30 Days</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    July 28, 2022
+                    &#x2022 7 min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    I have decided to learn JavaScript in 30 days (or so). Let the journey to 30 (days) begin!
+                </h3>
+            </header>
+
+            <p>
+                <a href="https://jgooco.com//blogs/my-biggest-regret-as-a-computer-engineering-graduate" class="blog-links" target="_blank">Last blog post</a>, I talked about starting to add more skills in a practical manner, and I was deciding at the time to either start with Python or JavaScript. 
+                Both languages are “easy” to learn, and with someone like me who already has programming experience in languages some would deem harder to learn, e.g. C++.
+            </p>
+            <p>
+                So, as you can see by the title of this blog post, I have decided to learn JavaScript. In fact, I am not just going to learn JavaScript. 
+                I am going to learn this programming language in 30 days! Will I be able to?                 
+            </p>
+            <p>
+                Well, before we get into that, let me answer some questions you may be having, such as: 
+            </p>
+            <p>
+                <em><strong>Why did I pick JavaScript over Python to learn first? 
+                    Is JavaScript viable to learn in 2022? Can someone really learn JavaScript in just 30 days?</strong></em> 
+            </p>
+            <p>
+                Read along to find these answers and more.
+            </p>
+            <h2 class="main-points-header-2">
+                <strong>Why Learn JavaScript Over Python?</strong>
+            </h2>            
+            <p>
+                There is no wrong answer in picking between two of the most popular and fastest-growing programming languages in the world. 
+                So, to explain why I will be learning JavaScript over Python first, we should go over each language and explain the differences between the two languages.
+            </p>
+            <figure class="size-1">
+                <img src="/images/python-2038870-1720083.png" alt="Python Logo" srcset="" style="width: 30%; margin-left: auto; margin-right: auto;">
+            </figure>
+            <h3 class="sub-points-header-3">
+                Python
+            </h3>            
+            
+            <p>
+                <strong>Python</strong> is a high-level, interpreted general purpose programming language, that is dynamically-types and gargbage-collected. 
+                Python can be used for both developing complex and simple programs, while also serving as a scripting language to aid in building web applications. 
+                Python is known as  a “batteries included programming language”, because of its vast range of libraries. Python was designed for easy readability.                 
+            </p>
+            <p>Here is a simple Hello World program written in Python:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-python">
+                    <code class="language-python">
+<span class="comment">#this program prints Hello World in Python</span> 
+<span class="keyword">print</span><span class="punctuation">(</span>"Hello World"<span class="punctuation">)</span>
+                    </code>
+                </pre>
+            </div>
+            <p>
+                Python also supports different programming paradigms, which are, Functional, Imperative, Object-oriented, and Procedural.
+            </p>
+
+            <figure class="size-1">
+                <img src="/images/JavaScript-logo.png" alt="Python Logo" srcset="" style="width: 30%; margin-left: auto; margin-right: auto;">
+            </figure>
+            <h3 class="sub-points-header-3">
+                JavaScript
+            </h3>
+            <p>
+                <strong>JavaScript</strong>, or <strong>JS</strong>, is an object-oriented programming language standardized in the ECMAScript language specification
+                 that is usually used to help create dynamic web pages. A
+                 long with HTML and CSS,, the three make of the core technologies of the World Wide Web, 
+                 in which JS provides dynamic functionality that HTML and CSS cannot do alone. 
+            </p>
+            <p>
+                While JS is typically meant to be used for front-end development, JS can now also be used to program the backend, 
+                which means JS can be used to perform full-stack, with code programmed for both the client and server side of code. 
+                JS also supports multiple programming paradigms, which are Object-oriented, Functional, and Imperative. 
+            </p>
+            <p>Now, here is the JavaScript version of the Hello World program:</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="comment">//this program prints Hello World in JavaScript</span> 
+<span class="keyword">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span>"Hello World"<span class="punctuation">)</span><span class="punctuation">;</span>
+                    </code>
+                </pre>
+            </div>
+            <figure class="size-1">
+                <img src="/images/PythonvsJS.png" alt="Python Logo" srcset="" style="margin-left: auto; margin-right: auto;">
+            </figure>
+            <h3 class="sub-points-header-3">
+                Python vs JavaScript
+            </h3>
+            <p>While both Python and JavaScript are programming languages, they both have many differences. For instance, JavaScript support asynchronous programming,
+                in which code can run seperately/parallel to the primary application thread. Python does not support asynchronous programming, but it does support tools
+                that do support it. This way, while JavaScript may be better at larger scales, Instagram and YouTube are examples that show Python can be used for scale as well.
+            </p>
+            
+            <p>Here is a table of more differences between the two programming languages:</p>
+
+            <table>
+                <tr>
+                    <th>Python</th>
+                    <th>JavaScript</th>
+                </tr>
+                <tr>
+                    <td>Idents define code blocks and new lines end statements</td>
+                    <td>Curly braces define code blocks and semicolons terminate statements</td>
+                </tr>
+                <tr>
+                    <td>No built in support for arrays</td>
+                    <td>Built in support for arrays</td>
+                </tr>
+                <tr>
+                    <td>Supports built in hash tables</td>
+                    <td>Has maps and sets</td>
+                </tr>
+                <tr>
+                    <td>No implicit data type conversion</td>
+                    <td>Has implicit data type conversion</td>
+                </tr>
+                <tr>
+                    <td>Class-based inheritance</td>
+                    <td>Prototype-based inheritence</td>
+                </tr>
+                <tr>
+                    <td>Comprehensive standard libraries</td>
+                    <td>Has fewer libraries</td>
+                </tr>
+                <tr>
+                    <td>Uses 'self' keyword for objects</td>
+                    <td>Uses 'this' method for objects</td>
+                </tr>
+                <tr>
+                    <td>Exception raised when function is called with wrong parameters</td>
+                    <td>Missing parameters assigned undefined value</td>
+                </tr>
+            </table>
+
+            <p>
+                <strong>With some of those differences in mind, in what cases would you typically use each language?</strong>
+            </p>
+
+            <p>
+                Python is also mainly a backend language, so it is typically restricted to the server side, while JavaScript can be both a front-end and a backend language.
+                And while both can be used in web development, Python is also able to do more in other fields such as Data Science, Machine Learning, and AI.
+            </p>
+            <p>
+                I must also point out, that one can build nearly any project with any programming language with enough knowledge, experience, and tools.
+                It's just that some programming languages perform better at building certain applications than others. 
+            </p>
+            <figure class="size-1">
+                <img src="/images//360_F_503895194_zF2fazuEjpirSIVWHLNq5Aqhrc3oLr9D.jpg" alt="front-end and back-end" srcset="" style="margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
+            </figure>
+            <p>
+                For my interests, I will be picking up JavaScript first, as I want to build up my skills as a Front-End developer first. 
+                However, I do plan on eventually getting back to Python, as I am interested in its many uses as well. 
+                For you, if you rather go into data science, machine learning, or even Back End work, Python may be the way to go. 
+                But for me, I will be learning JavaScript.
+            </p>
+            <h3 class="sub-points-header-3">
+                Is JavaScript still worth learning in 2022?
+            </h3>
+            <p>
+                Now, you may wonder if JavaScript is still something worth learning in 2022. And, it is my belief that, yes it is, as the JavaScript 
+                is currently the most popular language right now. Aaron Jack of the Aaron Jack | Freenote YouTube channel has a great video going 
+                into what statistically are the top 5 most programming languages to get a job. I suggest you check it out for further analysis into his process:
+            </p>
+            <figure class="size-2">
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9U684GbFST4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                
+            </figure>
+            <figcaption> <p><em>Aaron Jack's</em> video on the Top 5 Programming Languages in 2022 to Get a Job</p> </figcaption>
+            <p>
+                In the video, Aaron creates an equation, where Freelance work, job postings, and the Stack Overflow developer survey are weighted to give a final score, 
+                and JavaScript came out on top as the most popular language.
+            </p>
+            <p>
+                With 67.9%(link to Stack Developer survey) of developers using it at their job compared to 43.51% who use Python at work, 
+                the job market for JavaScript is bigger now than ever in 2022, and with no signs of slowing down, 
+                this is another reason I am learning JavaScript this year.
+            </p>
+            <h3 class="sub-points-header-3">
+                Can I Really Learn JavaScript in 30 Days?
+            </h3>
+            <p>
+                The answer to this question is yes… and no. You see, the plan IS to learn JavaScript in 30 days, but whether I learn it in less or more overall days is to be seen. 
+                The reason behind this vague answer is thatI will be taking on the challenge that is aptly named 
+                <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript" class="blog-links" target="_blank">“30 Days of JavaScript”</a>.  
+            </p>
+            <figure class="size-2">
+                <img src="/images/30daysjavascript.png" alt="30 Days of javascript" srcset="">
+            </figure>
+            <figcaption> <p>30 Days of JavaScript GitHub Repo</p> </figcaption>
+            <p>
+                This is a GitHub repo by Asabeneh S. Yetayeh, in which both beginners and advances developers are challenged to learn JavaScript in just 30 days.
+                Though, as Asabeneh has also stated:
+            </p>
+            <blockquote class="blockquote blockquote--bordered blockquote--quoted">
+                <p class="blockquote-text">
+                    30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. 
+                    This challenge may take more than 100 days, please just follow your own pace.
+                </p>
+                <p class="blockquote-text blockquote-text-credit">
+                    Asabeneh S. Yetayeh
+                </p>                
+            </blockquote>
+            
+            <p>
+                The great thing about 30 Days of JavaScript is that the challenge will suit both beginners(myself) and advanced developers 
+                who might want to brush up on skills and test themselves with the final projects.
+            </p>
+            <p>
+                The project has also been translated into various other languages, such as Spanish, Korean, Vietnamese, and Polish to name a few. 
+                This way, programmers internationally can begin their JavaScript journeys, lowering the bar on entry for this course.
+            </p>
+            <p>
+                Asabeneh also has two other 30 Day challenges, with both 
+                <a href="https://github.com/Asabeneh/30-Days-Of-Python" class="blog-links" target="_blank">Python</a> and 
+                <a href="https://github.com/Asabeneh/30-Days-Of-React" class="blog-links" target="_blank">React</a>, with more on the way. 
+                I look forward to possible tackling both in the future once I finish this challenge.
+            </p>
+            <p>
+                So, in summary, yes I will be taking on the 30 Days of JavaScript challenge. 
+                Whether it takes me exactly 30 days is yet to be determined, but I will complete this challenge. 
+                I will be documenting my journey in this blog, trying to reteach what I learn, document my successes and my failures, and show my progress at my journey for Day 30.
+            </p>
+            <p>
+                I also will be streaming each of the lessons on <a href="https://www.youtube.com/channel/UC4DSwB13gqtgi_TZTLpaMGg" class="blog-links" target="_blank">YouTube</a>. So if you want to see this JavaScript Journey to 30 live, you can go there, and I will be
+                saving the VODs for documentation purposes as well.
+            </p>
+            <figure class="size-2">
+                <img src="/images/youtubev1.png" alt="My YouTube channel" srcset="">
+            </figure>
+            <figcaption> <p><a href="https://www.youtube.com/channel/UC4DSwB13gqtgi_TZTLpaMGg" class="blog-links" target="_blank">My YouTube Channel</a></p> </figcaption>
+            <p>
+                If you have made it this far, if you would kindly, share this article. I would greatly apprecitate it. 
+                If you have done 30 Days of JavaScript, or plan to take it, let me down below. What was your experience with it?                 
+            </p>
+            <p>If you loved this article, and would love to see more, consider subscribing the my newsletter. You will recieve emails when a new blog post comes out!
+                Just scroll to the bottom of this page, and enter your email in the bottom right corner! You can unsubscribe at any time!
+            </p>
+            <p>
+                Until next time, wherever, and whenever you are, I hope you have an amazing day. Signing off.
+            </p>
 
             
+
+            <!-- <div class="coding-wrapper">
+                <pre class="coding-container">
+                    <code class="JS">
+                        <span class="comment">// This JavaScript program prints Hello World</span> 
+                        <span class="keyword">print</span><span class="punctuation">(</span>"Hello World"<span class="punctuation">)</span>
+                    </code>
+                </pre>
+            </div> -->
+            
+            
+
+            
+
+
+
+
             
             <div class="support-boba-container">
                 <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
@@ -66,6 +334,12 @@
                     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
                 </div>
             </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+
+            
             
             
             <div class="sharethis-inline-share-buttons"></div>
@@ -95,7 +369,7 @@
         <div class="form-submit">
             <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks">
                 <div class="form-row">
                     <input name="name" class="form-control" placeholder="Full Name" required>
                     <input name="email" class="form-control" placeholder="Email" required>

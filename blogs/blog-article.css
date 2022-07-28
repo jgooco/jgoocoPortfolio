@@ -74,6 +74,11 @@ h2{
     margin-top: 0.875rem;
     margin-bottom: 0.875rem;
 }
+.sub-points-header-3{
+    text-align: center;
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
+}
 time{
     font-size: 1rem;
     font-weight: 700;
@@ -104,6 +109,9 @@ figcaption p{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+.news-container{
+    margin-bottom: 50px;
+}
 .buy-me-boba-btn{
     display: flex;
     justify-content: left;
@@ -112,4 +120,65 @@ figcaption p{
 }
 .sharethis-inline-share-buttons{
     margin-bottom: 50px;
+}
+
+table{
+width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+th {
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 5px;
+}
+table{
+    margin-bottom: 1.75rem;
+}
+
+.blockquote{
+    margin: 10px;
+    margin-left: 30px;
+    padding: 10px;    
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    margin-bottom: 1.75rem;
+}
+.blockquote-text{
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
+}
+.blockquote--bordered {
+    border-left-width: 10px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    
+}
+.blockquote--quoted::before{
+    content: "\201c";
+    font-size: xx-large;
+    color: whitesmoke;
+    display:block;
+    margin-bottom: -40px;
+    margin-top: -10px;
+}
+.blockquote-text:not(:last-child){
+    margin: 1em;
+}
+.blockquote-text-credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    
+}
+.blockquote-text-credit::before{
+    content: "\2014\0020"
 }
