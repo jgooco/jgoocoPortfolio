@@ -90,6 +90,9 @@ h3{
 p{
     font-size: 1rem;
 }
+.in-blog{
+    margin-left: 50px;
+}
 figure * {
     display: block;
     justify-content: center;

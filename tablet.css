@@ -32,6 +32,9 @@
     text-align: center;
     padding: 10px;
 }
+.about-me{
+    flex-direction: column;
+}
 
 /* Contact  */
 .form-submit{

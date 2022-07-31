@@ -54,3 +54,9 @@ code[class*=language-] , pre[class*=language-]{
 .function{
     color:rgb(255, 161, 38)
 }
+.tag{
+    color:crimson;
+}
+.string-js{
+    color:lightskyblue;
+}
