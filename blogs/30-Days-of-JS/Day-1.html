@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJHBTQS');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Recap of 30DaysofJavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blog-article.css">
+    <link rel="stylesheet" href="/blogs/article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
+    
+</head> 
+    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJHBTQS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+    
+
+    <section class="blog-page">
+        
+        <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/blogs/30-Days-of-JS/day_1_1.png" alt="Day 1 of 30 Days of JS Thumnail" srcset="">
+            </figure>
+
+            <header class="title-container">
+                <h1>Day 1 Recap of 30DaysofJavaScript</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    July , 2022
+                    &#x2022  min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    Finished Day 1! Let's recap!
+                </h3>
+            </header>
+
+            <p>
+                First day of the 30 Days of JavaScript challenge. How did it go?
+            </p>
+
+            <script async data-uid="a7dc3e15ab" src="https://crafty-trailblazer-5891.ck.page/a7dc3e15ab/index.js"></script>
+
+            <p>
+                Well, it actually was kind of refreshing. 
+                Much of it was going over data types that I have not thoroughly reviewed in years.
+                Because of this, I was reminded of a lot of simple rules that had simply been lost 
+                in the back of my mind and resurfaced as I went through Day 1.
+            </p>
+
+            <p>
+                If you want to see me learn about JavaScript in real time, click the <a class="blog-links" href="https://www.youtube.com/watch?v=99JdVYgaj1s" target="_blank">YouTube link below</a>, where I streamed Day 1 and most of Day 2!
+            </p>
+
+            <figure class="size-2">
+                <!-- <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/99JdVYgaj1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> -->
+                <a href="https://www.youtube.com/watch?v=99JdVYgaj1s&t=9276s" target="_blank"><img src="/images/js30day1-2.png" alt="Day 1 Stream" srcset=""></a>
+            </figure>
+            <figcaption><p>YouTube stream of Day 1!!!</p></figcaption>
+
+            <p>
+                Now, we can discuss things that I learned/relearned, and things I found interesting.
+            </p>
+
+            <h2 class="main-points-header-2">
+                The Browser Console Shortcut
+            </h2>
+
+            <p>
+                One thing I noted was how we were going to run our code, and I knew the browser console would be involved. 
+                However, this was the first time I learned of the shortcut: Ctl+Shift+I. 
+                Never in my 24 years of living did I know that there was a shortcut to open up to the browser console. 
+                But now that I have, this may have been the biggest mind-blow thus far in my 30 Day journey of JavaScript.
+            </p>
+
+            
+            <h2 class="main-points-header-2">
+                JavaScript Doesn’t Need Semicolons?
+            </h2>
+            <figure class="size-1">
+                <img src="/blogs/30-Days-of-JS/Semicolon.png" alt="Python Logo" srcset="" style="width: 25%; margin-left: auto; margin-right: auto; margin-top: -60px;">
+            </figure>
+
+            <p>
+                While I was learning how to write my first “Hello World” program, I realized that  Asabeneh never used semicolons, 
+                and I did not understand why, as I had learned prior that semicolons were used to terminate code statements.
+            </p>
+            <p>
+                In further research since the stream, I have found that while yes, JavaScript does indeed work with semicolons, 
+                as it uses 
+                <a href="https://www.codingem.com/javascript-semicolon-usage/#:~:text=JavaScript%20does%20not%20require%20semicolons,Automatic%20Semicolon%20Insertion%20(ASI)" class="blog-links" target="_blank">ASI</a>, 
+                or <a href="https://www.codingem.com/javascript-semicolon-usage/#:~:text=JavaScript%20does%20not%20require%20semicolons,Automatic%20Semicolon%20Insertion%20(ASI)" class="blog-links" target="_blank">Automatic Semicolon Insertion</a>.
+            </p>
+
+            <p>
+                Basically, this means that the JavaScript parser, depending on what is written, will interpret the code you write as if there were semicolons, with a few different exceptions, which I will probably learn more in-depth down the road.
+            </p>
+
+            <h2 class="main-points-header-2">
+                Console.log(“Hello World!”)
+            </h2>
+
+            <p>
+                After installing Node.js (which I was told would be used for later) and opening the console, I learned of the multiple ways to print using the console, 
+                and how the console.log function would take in a single argument like:
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="string-js">"Hello World!"</span><span class="punctuation">)</span><span class="punctuation">;</span> 
+</code>
+</pre></div>
+            <p>We can also take in multiple parameters separated by commas:</p>
+
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+        <code class="language-js">
+<span class="keyword">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="string-js">"Hello"</span> , <span class="string-js">"World"</span> , <span class="string-js">"!"</span><span class="punctuation">)</span><span class="punctuation">;</span> 
+</code>
+</pre></div>
+
+            <h2 class="main-points-header-2">
+                How to Add JavaScript to a Web Page
+            </h2>
+
+            <p>
+                Now came the first new thing JavaScript related thing I have learned, that JavaScript can be written on a web page in three different ways:
+                <ul class="in-blog">
+                    <li>Inline script</li>
+                    <li>Internal script</li>
+                    <li>External script</li>
+                </ul>               
+                                
+            </p>
+
+            <p>Inline scripts are when you add JavaScript inside an HTML tage, such as when you write:</p>
+            
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+&lt<span class="tag">button</span> <span class="function">onlick</span> = "<span class="string-js">alert('Welcome!');</span>"&gtclick&lt/<span class="tag">button</span>&gt
+</code>
+</pre></div>
+
+            <p>
+                Internal scripts are when you write out the &ltscript&gt tag, and within the tag itself you write out JavaScript code, such as:
+            </p>
+            
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+&lt<span class="tag">script</span>&gt<span style="opacity: 50%;">&lt!--JS code would go here--&gt</span>&lt/<span class="tag">script</span>&gt
+</code>
+</pre></div>
+
+            <p>
+                And finally, external scripts are when you link an external JavaScript file (.js) to a &ltscript&gt tag in an HTML file. 
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+&lt<span class="tag">script</span> <span class="keyword">src</span> = "<span class="string-js">introduction.js</span>"&gt&lt/<span class="tag">script</span>&gt
+</code>
+</pre></div>
+
+            <h2 class="main-points-header-2">
+                Introduction to Data Types in JavaScript
+            </h2>
+
+            <p>
+                The next part of Day 1 went over five primitive data types in JavaScript: <em>String</em>, <em>Number</em>, <em>Boolean</em>, <em>undefined</em>, 
+                <em>Null</em>, and <em>Symbol</em>.
+            </p>
+
+            <p>
+                <strong>Numbers</strong> can be split into <em>Integers</em> (negative, zero, and positive) and <em>Floats</em> (decimals).
+            </p>
+
+            <p>
+                <strong>Strings</strong> are a group of one or more characters that are set between single quotes, double quotes, or backticks. 
+                Examples can be <em>'a'</em> , <em>"jovin"</em> and <em>`JavaScript`</em>.
+            </p>
+
+            <p>
+                <strong>Booleans</strong> are a value that looks at a comparison and is either <em>true</em> or <em>false</em>.
+            </p>
+
+            <p>
+                <strong>Undefined</strong> is when there is no value assigned to a variable.
+            </p>
+
+            <p>
+                <strong>Null</strong> means the variable has an empty value.
+            </p>
+
+            <p>
+                To check the data type of a variable, you can use the <strong><em>typeof</em></strong> operator, like in this example:
+            </p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+<span class="keyword">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span style="color: red">typeof</span> <span class="string-js">"Jovin"</span><span class="punctuation">)</span><span class="punctuation">;</span> 
+</code>
+</pre></div>>
+            <p>When running the above code, the console would print out <em>string</em>.</p>
+
+            <h2 class="main-points-header-2">
+                Comments in JavaScript
+            </h2>
+
+            <p>Comments are very similar to what I have learned in other languages such as C and Java. </p>
+
+            <p>Single line comments can be written with <em>//</em>.</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+<span class="comment">//You can write a single line comments like this</span> 
+</code>
+</pre></div>
+
+            <p>Multiline comments will be written between <em>/*</em> and <em>*/</em>.</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+<span class="comment">/*
+You can write 
+multiline comments 
+like this
+*/</span> 
+</code>
+</pre></div>
+
+            <h2 class="main-points-header-2">
+                Variables in JavaScript
+            </h2>
+
+            <p>Variables are the containers for data, which are stored in reserved memory locations. In JavaScript, you can use the keywords var, let, or const to declare a variable.</p>
+
+            <p>Use <em>let</em> for variables that can change, 
+                <em>const</em> for data that does not change at all, 
+                and (according to this challenge) do not use <em>var</em>, 
+                as it has lots of leaks.
+            </p>
+
+            <p>
+                JavaScript variable names have to follow certain rules:
+                <ul class="in-blog">
+                    <li>Should not begin with a number</li>
+                    <li>Cannot use special characters besides $ and _</li>
+                    <li>Follow the camelCase convention(something I did not learn about until I taught myself some Java last year)</li>
+                    <li>Should not have space between words</li>
+                </ul>               
+                                
+            </p>
+
+            <p>For example, writing a variable like firstName is a valid way to create a variable, but you could not write a variable like 1st-name.</p>
+
+            <p>To set declare a variable with a data type, use the let or const keyword before typing the variable’s name, type the equal sign(assignment operator), then the data value.</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+<code class="language-html">
+<span class="keyword">let</span> variableName = <span class="string-js">dataValue</span>
+</code>
+</pre></div>
+
+            <hr style ="margin-bottom: 40px;">
+            
+
+            <p>And this is the end of my recap of Day 1 of 30DaysofJavaScript. It was fun, and I feel I did learn better while streaming.
+                Interacting with people in real time while learning how a new programming language was a different experience that I enjoyed thoroughly.
+            </p>
+
+            <p>You can check out my 
+                <a href="https://github.com/jgooco/30DaysofJavaScript" target="_blank" class="blog-links">GitHub repo</a>, 
+                where I stored my code from the stream, which has code examples and comments/notes I made about what I was learning.
+            </p>
+
+            <p>Day 2 should be coming out soon! 
+                If you want to know when it comes out, subscribe to the blog below! Share if you found my content interesting, 
+                and consider buying me some boba with the link down below.</p>
+
+            <p>Until next time, wherever, and whenever you are, have an amazing day! Signing off.</p>
+
+
+
+
+            
+            <div class="support-boba-container">
+                <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
+                <div class="buy-me-boba-btn">  
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+            
+            
+            <div class="sharethis-inline-share-buttons"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                this.page.url = jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = blogs/my-biggest-regret-as-a-computer-engineering-graduate.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jgooco-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </article>                
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h4 class="footer-headings"><a href="/#home">Home</a></h4>
+                <ul class="anchor-link">
+                    <li><a href="/#about">About Me</a></li>
+                    <li><a href="/#project">Projects</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Pages</h4>
+                <div class="blogs-link-footer">
+                    <a href="/blogs/">Blogs</a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Support</h4>
+                <div class="buy-boba-img">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#ffffff" data-emoji="🥤" data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Newsletter</h4>
+                <p>Subscribe to the Blog!</p>
+                <script async data-uid="5e2e5a5350" src="https://crafty-trailblazer-5891.ck.page/5e2e5a5350/index.js"></script>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//jgooco-com.disqus.com/count.js" async></script>
+</body>
+</html>
