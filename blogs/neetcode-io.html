@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJHBTQS');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neetcode.io: The Best Way to Prepare for Coding Interviews</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blog-article.css">
+    <link rel="stylesheet" href="/blogs/article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
+    
+</head> 
+    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJHBTQS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+    
+
+    <section class="blog-page">
+        
+        <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/images/neetcodethumb.png" alt="" srcset="">
+            </figure>
+
+            <header class="title-container">
+                <h1>NeetCode.io: The Best Way to Prepare for Coding Interviews</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    August 2, 2022
+                    &#x2022 7 min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    Coding interviews are hard, and many don't know how to prepare. Luckily, I have just the resource for you! Did I mention it's free?
+                </h3>
+            </header>
+
+            <p>Back in my Biggest Regrets article, I wanted to explain how I prepare for coding interviews. Well, today is the day I explain that to all of you!</p>
+
+            <p>Today I will be explaining the FREE resource that is 
+                <a href="https://neetcode.io/" class="blog-links" target="_blank">NeetCode.io</a>
+                , what it is, how to use it, and how to improve your coding interview skills through it.</p>    
+                
+            <figure class="size-1">
+                <img src="/images/pexels-thisisengineering-3861964.jpg" alt="Coding Interview" srcset="" style="width: 100% ; margin-left:auto ; margin-right:auto;">
+            </figure>
+            <h2 class="main-points-header-2">
+                The Coding Interview: A Brief Overview
+            </h2>
+            <p>
+                Before we go forward, I probably need to explain to some of you who may not be as familiar with the Software Dev/Engineer technical coding interview. 
+            </p>
+            <p>
+                During these interviewers, it (probably) follows this format:
+            </p>
+            <div style="margin-left: 50px; margin-right: 25px">
+                <p>
+                    Interviewer: <em>Hello, (insert name here), how are you today?</em>
+                </p>
+                <p>
+                    Candidate: <em>Hello, (insert name here), how are you today?</em>
+                </p>
+                <p>
+                    Interviewer: <em>I'm doing great. Anyway, let's start the interview. I sent a (document/coding pad/etc.) to start, so I can see you code live.</em>
+                </p>
+                <p>
+                    Candidate: <em>Sounds great! I just opened up the link!</em>
+                </p>
+                <p>
+                    Interviewer: <em>Great, now, given this hard LeetCode problem that I randomly chose, can you create a solution in the best Time Complexity you can
+                        while explaining every detail clearly?
+                    </em>
+                </p>
+                <p>
+                    Candidate: <em>Um…</em>
+                </p>
+                <p>
+                    Interviewer: <em>Also, you have 40 minutes to do so, answer my follow up questions, and if we have time I'll answer your questions at the end. And your timer starts… 2 minutes ago! :3</em>
+                </p>
+            </div>
+
+            <p>
+                Obviously, I am exaggerating a bit, but this is the gist of the coding interview. If you have the time, here's a more funnier video regarding how coding interviews are like:
+            </p>
+
+            <figure class="size-2">
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kVgy1GSDHG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>                
+            </figure>
+            <figcaption> <p><em>Coding Interviews Be Like</em> from the YouTube channel <a href="https://www.youtube.com/c/NicholasT" target="_blank" class="blog-links">Nicholas T.</a></p> </figcaption>
+
+            <p>                
+                Candidates are meant to solve random coding questions, 
+                typically similar to those on websites such as LeetCode. 
+            </p>
+
+            <p>
+                These type of interviews center around the candidate attempting to find the most optimal solutions in a fixed amount of time, 
+                typically around 30 minutes to an hour. 
+                Depending on the company, the interviewer may be looking for different criteria, such as algorithm & data structures knowledge, 
+                coding skill, how you communicate your solution, among a variety of other qualities. 
+            </p>
+            
+            <p>
+                Now, I must say that among the developer and tech community, especially in the online space, these types of interviews are very controversial. 
+                The modern coding interview structure was created by MAMAA companies, such as Google, Meta, and Amazon, 
+                to filter out the best of the best candidates for their positions.
+            </p>
+
+            <p>
+                The rest of the industry picked up on this practice, and it has raised many issues, as these interviews typically do not show if a candidate 
+                can perform the actual job duties, but rather that they studied and grinded the Blind 75 questions on Leetcode (more on that in a bit).
+            </p>
+
+            <p>
+                In my opinion, while I do agree to an extent that the modern coding interview has its flaws, 
+                I do acknowledge that at this point in time, passing the coding interview is a skill unto itself for Software Engineers/Developers to have.
+            </p>
+
+            <figure class="size-2">
+                <img src="/images/blind75.jpg" alt="Coding Interview" srcset="" style="margin-left:auto ; margin-right:auto;">
+            </figure>
+            <h2 class="main-points-header-2">
+                The Blind 75
+            </h2>
+
+            <p>
+                <a href="https://leetcode.com/list/xi4ci4ig/" class="blog-links" target="_blank">The Blind 75</a>
+                 are the 75 most asked questions from LeetCode by companies during coding interviews. 
+                Most interview questions you will be given are typically based on these 75 LeetCode questions or are very similar. 
+                The Blind 75 can be categorized into patterns, such as Arrays, Linked Lists, Dynamic Programming, and Greedy Algorithms, among others.
+            </p>
+
+            <p>
+                These various patterns are the basis of nearly all LeetCode questions, 
+                and thus mastering them all means you will mostly be prepared for the coding interview knowledge and skills-wise.
+            </p>
+
+            <p>
+                However, if you memorize the answers to these questions rather than actually applying the knowledge of recognizing the pattern, 
+                this may lead you to fail the interview process as well, as you may not able to explain the solution at all. Many companies also value
+                their candidates to explain their solution in an understandable manner, and if you were to just memorize a question without understanding it, 
+                you may end up being rejected even if you got the optimal solution.
+            </p>
+
+            <p>
+                This is why these coding interviews can be difficult to some, as recognizing that you must use a specific algorithm to get the optimal solution in 
+                45 minutes while dealing with the intricacies of your coding language of choice can be overwhelming.
+            </p>
+
+            <p>
+                Fortunately, this is where NeetCode.io comes in.
+            </p>
+            
+            <figure class="size-2" id="Needcode.io">
+                <img src="/images/neetcode.png" alt="" srcset="">
+            </figure>
+            <h2 class="main-points-header-2">
+                NeetCode & Needcode.io
+            </h2>
+
+            <p>
+                NeetCode is a YouTuber who posts coding solutions to LeetCode questions. 
+                NeetCode used to be a N.E.E.T (Not in Education, Employment, or Training) but has recently become a Software Engineer at Google. 
+                Neetcode is one of the best YouTubers at explaining solutions to LeetCode, as not only does he provide both a brute force and optimal solution, 
+                but he goes into detail regarding the actual algorithm and/or data structure needed to find the optimal solution. 
+            </p>
+
+            <p>
+                <a href="https://neetcode.io/" class="blog-links" target="_blank">NeetCode.io</a> was created for people to prepare for coding interviews in a more efficient way.
+                NeetCode.io has organized coding questions into categories with the intention to learn how to solve the patterns typically seen in these coding interview questions,
+                rather than picking a random LeetCode problem or two a day.
+            </p>
+
+            <p>
+                NeedCode wanted to create a resource in which anyone could learn how to answer coding interview questions by recognizing that pattern and applying that pattern to 
+                find the optimal solution.
+            </p>
+
+            <figure class="size-2" id="Needcode.io">
+                <img src="/images/neetcode-io.png" alt="Neetcode.io website" srcset="">
+            </figure>
+            <figcaption> <p><a href="https://neetcode.io/" class="blog-links" target="_blank">NeetCode.io</a> Website</p></figcaption>
+
+            <p>
+                On NeetCode.io, NeetCode has kindly categorized 150 questions, which include the Blind 75, on this website. 
+                Each pattern has a series of questions, ranging from easy-hard LeetCode difficulty.
+            </p>
+
+            <p>
+                Each question links back to the LeetCode problem of the same name, where you can try to solve it.  
+            </p>
+
+            <p>
+                NeedCode also includes both his own video solution, where he goes in-depth on how to solve the problem, as well as various code answers. 
+                All the LeetCode questions have answers in Python, and nearly all also have answers in Java, C++, and JavaScript, so you can study and understand the solution. This was
+                of particular use to me, as the language I am most comfortable with is C++, so having the solutions I can look at to learn from in the programming language of my choice
+                was amazing.
+            </p>
+
+            <p>
+                Once you understand, I recommend then trying it out on your own once with being able to reference both the video and code solutions.
+            </p>
+
+            <figure class="size-2" id="Needcode.io">
+                <img src="/images/neetcode-io2.png" alt="Neetcode.io Drop Down" srcset="">
+            </figure>
+            <figcaption> <p>NeetCode.io lists the problem difficulty, and provides video and coding solutions for reference.</p></figcaption>
+
+            <p>
+                After that, I recommend you attempt to start trying to solve each question on your own. 
+                I also recommend that you record yourself during these attempts, and as you solve them, say what you are coding and why.  
+            </p>
+            
+            <p>
+                This is because many companies will not be only checking to see if you can provide the optimal solution to a problem, 
+                but also if you can explain your thought process in an understandable way.
+            </p>
+
+            <p>
+                If you listen or watch back your recording and you cannot understand yourself, 
+                the engineers and developers interviewing you will not be able to understand either.
+            </p>
+
+            <p>
+                The way NeetCode.io is set up, you can easily go in any way you want. 
+                Maybe you want to finish all the easy problems. Maybe you want to brush up on a specific pattern like Graphs, 
+                so you complete all the Graph questions. Or maybe you just want to go in at random and try to solve 1 out of the 150 questions. 
+                All approaches are possible with NeetCode.io.
+            </p>
+
+            <p>
+                You can also sign in, so you can save your progress across devices. 
+                Say you were on your desktop in the middle of some Sliding Window problems, and you had to leave for work. 
+                Then, once you get on your lunch, you can open NeetCode.io on your work laptop, and start off where you left off.
+            </p>
+
+            <figure class="size-2" id="Needcode.io">
+                <img src="/images/neetcode-io3.png" alt="NeetCode.io Drop Down" srcset="">
+            </figure>
+            <figcaption> <p>Sign up and sign in to save work across devices!</p></figcaption>
+
+            <p>
+                In all honesty, I am jealous, as if I had this resource when I was in college, or even last year when I was graduating, 
+                I would have done at least a few problems every day. 
+            </p>
+
+            <p>
+                Many resources even just a few years ago about how to solve coding interview LeetCode style questions were either a premium service, 
+                or scattered across YouTube, with varying levels of explanation on what the actual pattern was.
+            </p>
+
+            <p>
+                Now, NeetCode and NeetCode.io are here, and I could not be more thankful. I urge you guys to subscribe to NeetCode and tell you I sent you 
+                (though he probably will not even know who I am). He is amazing, and NeetCode.io is one of if not the main reasons 
+                I got to the final stage of that MAMMA/FAANG company interview process. I have no doubt that this incredible resource will be 
+                the reason one of you will be able to get the job of your dreams!
+            </p>
+
+
+
+
+            
+            <div class="support-boba-container">
+                <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
+                <div class="buy-me-boba-btn">  
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+            
+            
+            <div class="sharethis-inline-share-buttons"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                this.page.url = jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = blogs/my-biggest-regret-as-a-computer-engineering-graduate.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jgooco-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </article>                
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h4 class="footer-headings"><a href="/#home">Home</a></h4>
+                <ul class="anchor-link">
+                    <li><a href="/#about">About Me</a></li>
+                    <li><a href="/#project">Projects</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Pages</h4>
+                <div class="blogs-link-footer">
+                    <a href="/blogs/">Blogs</a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Support</h4>
+                <div class="buy-boba-img">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#ffffff" data-emoji="🥤" data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Newsletter</h4>
+                <p>Subscribe to the Blog!</p>
+                <script async data-uid="5e2e5a5350" src="https://crafty-trailblazer-5891.ck.page/5e2e5a5350/index.js"></script>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//jgooco-com.disqus.com/count.js" async></script>
+</body>
+</html>
