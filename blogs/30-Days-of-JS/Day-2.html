@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJHBTQS');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 Recap of 30DaysofJavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blog-article.css">
+    <link rel="stylesheet" href="/blogs/article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
+    
+</head> 
+    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJHBTQS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+    
+
+    <section class="blog-page">
+        
+        <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/blogs/30-Days-of-JS/day_1_2.png" alt="Day 2 of 30 Days of JS Thumnail" srcset="">
+            </figure>
+
+            <header class="title-container">
+                <h1>Day 2 Recap of 30DaysofJavaScript</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    August 4, 2022
+                    &#x2022 5 min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    Finished Day 2! Let's recap!
+                </h3>
+            </header>            
+
+            <script async data-uid="a7dc3e15ab" src="https://crafty-trailblazer-5891.ck.page/a7dc3e15ab/index.js"></script>
+
+            <p>So, how did Day 2 of 30DaysOfJavaScript go?</p>
+
+            <p>Well, for starters, I feel it was slightly overhwhelming. This was because of the vast knowledge that was put on me about Strings and String Methods.</p>
+
+            <p>Learning about how each String Method worked was tough, but I also know it is essential to know going forward, especially for anything taught
+                may require string manipulation in a future project either in this course or the future
+            </p>
+
+            <p>I am getting a little ahead of myself, so let's go from the top!</p>
+
+            <h2 class="main-points-header-2">
+                Primitive vs Non-Primitive Data Types
+            </h2>
+
+            <p>
+                On <a href="https://jgooco.com/blogs/30-Days-of-JS/Day-1" class="blog-links" target="_blank">Day 1</a>
+                I was introduced to the various data types in JavaScript. Day 2 went further into this topic, and introduced the concept of 
+                <strong>Primitive Data Types</strong> and <strong>Non-Primitive Data Types</strong>.
+            </p>    
+            
+            <h3 class="sub-points-header-3">Primitive Data Types</h3>
+
+            <p>
+                <strong>Primitive Data Types</strong> include the following:
+                <ul class="in-blog">
+                    <li>Numbers(integers and floats)</li>
+                    <li>Strings(data in between ' ', " ", or ` `)</li>
+                    <li>Booleans(true or false)</li>
+                    <li>Null(empty/no value</li>
+                    <li>Undefined(variable with no value)</li>
+                    <li>Symbol(unique value generated by Symbol constructor</li>
+                </ul>
+            </p>
+
+            <p>
+                <em>Primitive</em> data types are immutable, or non-modifiable. This means that once you create a primitive data type, you cannot modify it. An example would be like:
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> variable = <span class="string-js">'Jovin'</span>
+<span class="comment">//you cannot then modify the string like this:</span>
+variable[1] = 'X'
+<span class="comment">//JavaScript would raise an error</span>
+</code>
+</pre>
+            </div>
+
+            <p>
+                <em>Primitive </em> data types can be compared by values. You can use comparisons such as "<span class="punctuation">==</span>" to check if 
+                the values of two variables are equal.
+            </p>
+
+            <h3 class="sub-points-header-3">Non-Primitive Data Types</h3>
+
+            <p>
+                On the other hand, <strong>Non-primitive Data Types</strong> include the following:
+                <ul class="in-blog">
+                    <li>Objects</li>
+                    <li>Arrays</li>
+                </ul>
+            </p>
+
+            <p>
+                <em>Non-primitive data types</em> are mutable, which means the value can be modified. For example, let's take an array called nums:
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> nums <span class="punctuation">=</span> <span class="punctuation">[</span> <span class="variable">1</span> , <span class="variable">10</span> , <span class="variable">100</span> <span class="punctuation">]</span>
+</code>
+</pre>
+            </div>
+
+            <p>If we were to</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+nums<span class="punctuation">[</span><span class="variable">1</span><span class="punctuation">]</span> <span class="punctuation">=</span> <span class="variable">200</span> 
+</code>
+</pre>
+            </div>
+
+            <p>If we were to print to the console, the new array would be [1, 200, 100]</p>
+
+            <p>With <em>Non-primitive</em> data types, you cannot compare by value like <em>primitive</em> data types, even if they have the same property and values. Rather, they are
+                compared by reference. This means that two objects are only stricty equal to each other if they are referenceing the same object.
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> nums <span class="punctuation">=</span> <span class="punctuation">[</span> <span class="variable">1</span> , <span class="variable">10</span> , <span class="variable">100</span> <span class="punctuation">]</span>
+<span class="keyword">let</span> numbers <span class="punctuation">=</span> <span class="punctuation">[</span> <span class="variable">1</span> , <span class="variable">10</span> , <span class="variable">100</span> <span class="punctuation">]</span>
+console.<span class="function">log</span>(nums == numbers) <span class="comment">//this would come as false</span>
+
+<span class="keyword">let</span> nums <span class="punctuation">=</span> <span class="punctuation">[</span> <span class="variable">1</span> , <span class="variable">10</span> , <span class="variable">100</span> <span class="punctuation">]</span>
+<span class="keyword">let</span> numbers <span class="punctuation">=</span> nums
+console.<span class="function">log</span>(nums == numbers) <span class="comment">//this would come as true</span>
+</code>
+</pre>
+            </div>
+
+            <h2 class="main-points-header-2">
+                Numbers
+            </h2>
+
+            <p>In JavaScript, the Math Object has a lot of methods to work with number data types. I'll list a few of them here, you can read more about them on 
+                <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md#numbers" class="blog-links" target="_blank">Day 2 of 30DaysofJavaScript.</a>
+            </p>
+
+            <p>
+                <ul class="in-blog">
+                    <li> Math.round() - rounds to nearest number</li>
+                    <li> Math.floor() - rounds down</li>
+                    <li> Math.ceil() - rounds up</li>
+                    <li> Math.random() - generates a random number between 0 and 0.999999</li>
+                    <li> Math.log(x) - returns the natural log of x</li>                    
+                </ul>
+            </p>
+
+            <p>
+                To use the random() method, you have to set it up so it can gernerate numbers >=1
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> randomNum = <span class="object">Math</span>.<span class="function">random</span>()
+<span class="keyword">let</span> betweenZeroAndTen = randomNum <span class="variable">* 11</span> <span class="comment">// gives number between 0-10.99</span>
+<span class="keyword">let</span> randomNumRoundFloor = <span class="object">Math</span>.<span class="function">floor</span>() <span class="comment">// will give number between 0 & 10</span>
+</code>
+</pre>
+            </div>
+
+            <h2 class="main-points-header-2">
+                Strings
+            </h2>
+
+            <figure class="size-2" style="margin-bottom: 1.75rem;">
+                <img src="/images/anakin.gif" alt="Anakin saying This is when the fun begein" srcset="">
+            </figure>
+
+            <p>Oh boy this is NOT where the fun began.</p>
+
+            <p>Strings... man this nearly broke me. So many methods to learn, so many examples to read.</p>
+
+            <p>In all seriousness, none of the string methods were hard to understand, but rather, they were sheer amount of information overwhelmed me at first read.</p>
+
+            <p>But before we get into the string methods, let's go over a few things...</p>
+
+            <h3 class="sub-points-header-3">String Concatenation</h3>
+
+            <p>If you connect 2 or more strings, that would be concatnation. You CAN use the addition operator to do so, as shown in the code below:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> fullName = firstName + space + lastName
+</code>
+</pre>
+            </div>
+
+            <p>However, this way as said in the lesson is tedious and error prone. THe other way is to use ES^ template strings, which would be explained at a later time.</p>
+
+            <h3 class="sub-points-header-3">Long Literal Strings, Escape Sequences, and Template Strings</h3>
+
+            <p>If you wanted a string to be long, but cannot fit it on one line, use the backslash(\) at the end of each line. This will let JavaScript know the string will continue on the next line.</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">const</span> paragraph = <span class="string-js">"This is an example of how to use a long literal string.\
+This way, the string can be used on multiple line. Using the backslash \
+character indicated you want the string to recoginze another line as\
+being part of the same string."</span>
+</code>
+</pre>
+            </div>
+
+            <p>
+                In JavaScript, as well as other programming languages, you use the \ followed by characters to make an escape sequence. These include:
+                <ul class="in-blog">
+                    <li>\n new line</li>
+                    <li>\t tab</li>
+                    <li>\\ back slash</li>
+                    <li>\' single quote</li>
+                    <li>\" double quote</li>
+                </ul>
+            </p>
+
+            <p>Inside ` `, you can inject data in a template string by enclosing the expression with curly brackets {}:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> a = <span class="variable">2</span>
+<span class="keyword">let</span> b = <span class="variable">3</span>
+console.<span class="function">log</span>(<span class="string-js">`The sum of</span> ${a} <span class="string-js">and</span> ${b} <span class="string-js">is</span> ${a+b}<span class="string-js">`</span>)
+<span class="comment">// this will print out the data for a & b dynamically</span>
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">String Methods</h3>
+
+            <p>With the 20 string methods in this section of Day 2, I will share just some of them. If you would like to read about all of them, check out 
+                <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md#string-methods" class="blog-links" target="_blank"> Day 2 of 30DaysOfJavaScript!</a></p>
+
+
+            <p>
+                <ul class="in-blog">
+                    <li>length: returns length of string</li>
+                    <li>toUpper & toLower: makes the string either all uppercase or lowercase respectively</li>
+                    <li>substr():slices a given number of characters in string at starting index</li>
+                    <li>split(): splits a string at a specified place</li>
+                    <li>includes(): returns ture or false after checking if a substring arguement exists within a string</li>
+                    <li>indexOf(): given a substring, if subnstring exists in string, returns first position of substring</li>
+                    <li>concat(): takes substrings and joins them</li>
+                    <li>repeat(): takes a number and returns a string repeated that many times</li>
+                </ul>
+            </p>
+
+            <p>And this is the end of my recap of Day 2 of 30DaysofJavaScript. A lot more information from this day, but it was definitely a good recap.
+            </p>
+
+            <p>You can check out my 
+                <a href="https://github.com/jgooco/30DaysofJavaScript" target="_blank" class="blog-links">GitHub repo</a>, 
+                where I stored my code from the stream, which has code examples and comments/notes I made about what I was learning.
+            </p>
+
+            <p>Day 3 should be coming out soon! 
+                If you want to know when it comes out, subscribe to the blog below! Share if you found my content interesting, 
+                and consider buying me some boba with the link down below.</p>
+
+            <p>Until next time, wherever, and whenever you are, have an amazing day! Signing off.</p>
+            
+            <div class="support-boba-container">
+                <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
+                <div class="buy-me-boba-btn">  
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+            
+            
+            <div class="sharethis-inline-share-buttons"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                this.page.url = jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = blogs/my-biggest-regret-as-a-computer-engineering-graduate.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jgooco-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </article>                
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h4 class="footer-headings"><a href="/#home">Home</a></h4>
+                <ul class="anchor-link">
+                    <li><a href="/#about">About Me</a></li>
+                    <li><a href="/#project">Projects</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Pages</h4>
+                <div class="blogs-link-footer">
+                    <a href="/blogs/">Blogs</a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Support</h4>
+                <div class="buy-boba-img">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#ffffff" data-emoji="🥤" data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Newsletter</h4>
+                <p>Subscribe to the Blog!</p>
+                <script async data-uid="5e2e5a5350" src="https://crafty-trailblazer-5891.ck.page/5e2e5a5350/index.js"></script>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//jgooco-com.disqus.com/count.js" async></script>
+</body>
+</html>

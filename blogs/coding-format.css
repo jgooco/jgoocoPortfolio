@@ -60,3 +60,9 @@ code[class*=language-] , pre[class*=language-]{
 .string-js{
     color:lightskyblue;
 }
+.variable{
+    color:skyblue;
+}
+.object{
+    color:goldenrod;
+}
