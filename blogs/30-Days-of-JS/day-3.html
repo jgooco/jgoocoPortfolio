@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJHBTQS');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Recap of 30DaysofJavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blog-article.css">
+    <link rel="stylesheet" href="/blogs/article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
+    
+</head> 
+    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJHBTQS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+    
+
+    <section class="blog-page">
+        
+        <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/blogs/30-Days-of-JS/day_1_3.png" alt="Day 2 of 30 Days of JS Thumnail" srcset="">
+            </figure>
+
+            <header class="title-container">
+                <h1>Day 3 Recap of 30DaysofJavaScript</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    August 10, 2022
+                    &#x2022  4 min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    Finished Day 3! Let's recap!
+                </h3>
+            </header>            
+
+            <script async data-uid="a7dc3e15ab" src="https://crafty-trailblazer-5891.ck.page/a7dc3e15ab/index.js"></script>
+
+            <p>So, what did I learn on Day 3 of 30DaysofJavaScript? Let's see!</p>
+
+            <p>The topics taught in Day 3 were Booleans, Undefined, Null, Operators, Window Methods, and Date Objects.</p>
+            <p>Click <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/03_Day_Booleans_operators_date/03_booleans_operators_date.md" class="blog-links" target="_blank">here</a> to follow along.</p>
+
+            <p>Let's go through each one!</p>
+
+            <h2 class="main-points-header-2">
+                Booleans
+            </h2>
+
+            <p>So, booleans are a data type that will return as either true or false. You can use booleans when using comparisons,
+                as comparisons while return a boolean value.
+            </p>
+
+            <h3 class="sub-points-header-3">
+                Truthy Values
+            </h3>
+
+            <p>The following values will be true:
+                <ul class="in-blog">
+                    <li>All positive and negative numbers (not zero)</li>
+                    <li>All strings except an empty string</li>
+                    <li>Boolean true</li>
+                </ul>
+            </p>
+            <h3 class="sub-points-header-3">
+                Falsy Values
+            </h3>
+
+            <p>The following values will be true:
+                <ul class="in-blog">
+                    <li>0</li>
+                    <li>0n</li>
+                    <li>null</li>
+                    <li>undefined</li>
+                    <li>Not a Number (NaN)</li>
+                    <li>Boolean false</li>
+                    <li>Empty string</li>
+                </ul>
+            </p>
+
+            <h2 class="main-points-header-2">
+                Undefined & Null
+            </h2>
+
+            <p>The undefined and null sections were brief, and I can just summarize them both real quick.</p>
+
+            <p>Undefined variables are ones with no assigned variable, while null will make variables have no variable, or be empty.
+                They are very similar, but I think the best way to explain it is, variables with a null value are purposely programmed to have no value,
+                while undefined variables were never given a value.
+            </p>
+
+            <h2 class="main-points-header-2">
+                Operators
+            </h2>
+
+            <p>The next section was operators. There are many types of operators.</p>
+
+            <h3 class="sub-points-header-3">
+                Assignment Operators
+            </h3>
+
+            <p>The following are assignment operators. We will use variables x & y as examples.</p>
+
+            <table>
+                <tr>
+                    <th style="width:50%;">Assigment Operator</th>
+                    <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                    <td>x = y</td>
+                    <td>Values of y is stored in x</td>
+                </tr>
+                <tr>
+                    <td>x += y</td>
+                    <td>x + y is stored in x. The same as x = x + y</td>
+                </tr>
+                <tr>
+                    <td>x -=y</td>
+                    <td>x - y is stored in x. The same as x = x - y</td>
+                </tr>
+                <tr>
+                    <td>x *= y</td>
+                    <td>x * y is stored in x. The same as x = x * y</td>
+                </tr>
+                <tr>
+                    <td>x /= y</td>
+                    <td>x / y is stored in x. The same as x = x / y</td>
+                </tr>
+                <tr>
+                    <td>x %= y</td>
+                    <td>x % y is stored in x. The same as x = x % y</td>
+                </tr>
+                <tr>
+                    <td>x **= y</td>
+                    <td>x ** y is stored in x. The same as x = x ** y</td>
+                </tr>
+                <tr>
+            </table>
+
+            <h3 class="sub-points-header-3">
+                Arithmetic Operators
+            </h3>
+
+            <p>Arithmetic operators, even if you are not a programmer, are probably easy to recognize.</p>
+
+            <p>
+                <ul class="in-blog">
+                    <li>Addition (+)</li>
+                    <li>Subbtraction (-)</li>
+                    <li>Multiplication (*)</li>
+                    <li>Division (/)</li>
+                    <li>Modulus (aka remainder) (%)</li>
+                    <li>Exponential (**) </li>
+                </ul>
+            </p>
+
+            <h3 class="sub-points-header-3">
+                Comparison Operators
+            </h3>
+
+            <p>Next we had the comparison operators, or operators used to compare values.</p>
+
+            <table>
+                <tr>
+                    <th style="width:50%;">Assigment Operator</th>
+                    <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                    <td>x == y</td>
+                    <td>Equal in value only</td>
+                </tr>
+                <tr>
+                    <td>x === y</td>
+                    <td>Equal in value and data type. <em>Note: Use this instead of ==</em></td>
+                </tr>
+                <tr>
+                    <td>x != y</td>
+                    <td>Not equal</td>
+                </tr>
+                <tr>
+                    <td>x > y</td>
+                    <td>Greater than</td>
+                </tr>
+                <tr>
+                    <td>x < y </td>
+                    <td>Less than</td>
+                </tr>
+                <tr>
+                    <td>x >= y</td>
+                    <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                    <td>x <=  y </td>
+                    <td>Less than or equal to</td>
+                </tr>
+                <tr>
+            </table>
+
+            <h3 class="sub-points-header-3">
+                Logical Operators
+            </h3>
+
+            <p>Three of the most common logical operators are &&(when both conditions on each side are the same, returns true, else false),
+                ||(when either condition is true, returns true, else false), and !(negates the value, true beceomes false, false becomes true).
+            </p>
+
+            <h3 class="sub-points-header-3">
+                Increment and Decrement Operators
+            </h3>
+
+            <p>Increment operators increase a value stored in a variable, while a decrement operator decreases the value. Both can be done pre or post incrementally,
+                though most of the time, you would use a post increment.
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">let</span> count = 0;
+console.<span class="function">log</span>(++count) <span class="comment">//pre increment</span>
+console.<span class="function">log</span>(count--) <span class="comment">//post increment</span>
+</code>
+</pre>
+            </div>
+
+            <h2 class="main-points-header-2">
+                Window Methods
+            </h2>
+
+            <p>JavaScript has a few methods for pop ups in the browser.</p>
+
+            <h3 class="sub-points-header-3">
+                Window alert() 
+            </h3>
+
+            <p>Alert() displays an alert box with a message and an OK button. It is usuually used for testing.</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="function">alert</span>(<span class="comment">put your message here</span>)
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">
+                Window prompt() 
+            </h3>
+
+            <p>Prompt() displays a prompt box that takes an input from the browser to take input values and that data can be stores into a variable.</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="function">prompt</span>(<span class="string-js">'required text'</span>, <span class="string-js">'optional text'</span>)
+</code>
+</pre>
+
+</div>
+
+            <h3 class="sub-points-header-3">
+                Window confirm() 
+            </h3>
+
+            <p>The confirm method will display a box with a message, along with an OK and cancel button. This box is typically used to ask
+                a user for perimission to execute something. Clicking OK will return a true value, and Cancel a false value.
+            </p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="function">confirm</span>(<span class="string-js">'message here'</span>)
+</code>
+</pre>
+</div>
+
+            <h2 class="main-points-header-2">
+                Date Object
+            </h2>
+
+            <p>Now, let's talk about how we can grab current time using JavaScript Date Object. Here is how to create a Date Object and its methods:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">const</span> now = <span class="keyword">new</span> <span class="object">Date()</span> <span class="comment">//How to create Date object</span>
+<span class="comment">//we are going to use a variable called time to contain set equal to method</span>
+time = now.<span class="function">getFullYear</span>() <span class="comment">//gets the year</span>
+time = now.<span class="function">getMonth</span>() <span class="comment">//gets month, will be from 0-11</span>
+time = now.<span class="function">getDate</span>() <span class="comment">//gets the date of the month (1-31)</span>
+time = now.<span class="function">getDay</span>() <span class="comment">//gets number of day of the week (0-6, Sunday-Saturday)</span>
+time = now.<span class="function">getHours</span>() <span class="comment">//gets current hour</span>
+time = now.<span class="function">getMinutes</span>() <span class="comment">//gets current minutes</span>
+time = now.<span class="function">getSeconds</span>() <span class="comment">//gets the current second</span>
+time = now.<span class="function">getTime</span>() <span class="comment">//gets the amount of seconds past since January 1, 1970</span>
+</code>
+</pre>
+</div>
+
+            <p>To print value for readibility, you may have to manipulate them. For example, for both getMonth() and getDay(), you have to add 1,
+                as their index starts at 0.
+            </p>
+
+            <p>And this is the end of my recap of Day 3 of 30DaysofJavaScript. My favorite part was learning about the Date Object, as 
+                time methods will be very useful to have for projects in the future.
+            </p>
+
+            
+            <p>Day 4 should be coming out soon! 
+                If you want to know when it comes out, subscribe to the blog below! Share if you found my content interesting, 
+                and consider buying me some boba with the link down below.</p>
+
+            <p>Until next time, wherever, and whenever you are, have an amazing day! Signing off.</p>
+            
+            <div class="support-boba-container">
+                <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
+                <div class="buy-me-boba-btn">  
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+            
+            
+            <div class="sharethis-inline-share-buttons"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                this.page.url = jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = blogs/my-biggest-regret-as-a-computer-engineering-graduate.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jgooco-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </article>                
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h4 class="footer-headings"><a href="/#home">Home</a></h4>
+                <ul class="anchor-link">
+                    <li><a href="/#about">About Me</a></li>
+                    <li><a href="/#project">Projects</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Pages</h4>
+                <div class="blogs-link-footer">
+                    <a href="/blogs/">Blogs</a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Support</h4>
+                <div class="buy-boba-img">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#ffffff" data-emoji="🥤" data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Newsletter</h4>
+                <p>Subscribe to the Blog!</p>
+                <script async data-uid="5e2e5a5350" src="https://crafty-trailblazer-5891.ck.page/5e2e5a5350/index.js"></script>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//jgooco-com.disqus.com/count.js" async></script>
+</body>
+</html>

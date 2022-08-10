@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJHBTQS');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 Recap of 30DaysofJavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="/phone.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/blogs/blog-article.css">
+    <link rel="stylesheet" href="/blogs/article-images.css">
+    <link rel="stylesheet" href="/blogs/coding-format.css">
+    <script src="https://kit.fontawesome.com/e99037a273.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62dde3c66895ac00191ea9df&product=inline-share-buttons' async='async'></script> 
+    
+</head> 
+    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJHBTQS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <ul id="nav-list">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#project">Projects</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <script>
+            const hamburgerButton = document.getElementById('hamburger')
+            const navList= document.getElementById('nav-list')
+
+            function toggleButton(){
+                navList.classList.toggle('show')
+            }
+
+            hamburgerButton.addEventListener('click', toggleButton)
+        </script>
+    </nav>
+    
+
+    <section class="blog-page">
+        
+        <article class="blog-articles">
+            <a class="back-to-blogs"href="/blogs">back to blogs</a>
+            <figure class="size-3" id="thumbnail">
+                <img src="/blogs/30-Days-of-JS/day_1_7.png" alt="Day 2 of 30 Days of JS Thumnail" srcset="">
+            </figure>
+
+            <header class="title-container">
+                <h1>Day 7 Recap of 30DaysofJavaScript</h1>
+                <p style="font-size:0.9rem; line-height: 1.75rem; display: block; margin-bottom:1.75rem; margin-top: -1.4rem;">
+                    August 10, 2022
+                    &#x2022 2 min read
+                </p> <!--create publish time here-->
+                <h3 class="subheading">
+                    Finished Day 7! Let's recap!
+                </h3>
+            </header>            
+
+            <script async data-uid="a7dc3e15ab" src="https://crafty-trailblazer-5891.ck.page/a7dc3e15ab/index.js"></script>
+
+            <p>So, what did I learn on Day 7 of 30DaysofJavaScript? Let's see!</p>
+
+            <p>Day 7 was all about creating custom functions in JavaScript. Let's just jump right into it!</p>
+
+            <p>Click <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/07_Day_Functions/07_day_functions.md" class="blog-links" target="_blank">here</a> to follow along.</p>
+
+
+            <h2 class="main-points-header-2">
+                Function
+            </h2>
+
+            <p>Functions are reusable blocks of code that will perform a certain task. The function can take a parameter, which then will be 
+                used in the arguement. Functions can store data by returning data types. Functions make code cleaner, reusuable, and easy to test.
+            </p>
+
+            <p>Functions can be created in a few ways:
+                <ul class="in-blog">
+                    <li>Declaration function</li>
+                    <li>Expression function</li>
+                    <li>Anonymous function</li>
+                    <li>Arrow function</li>
+                </ul>
+            </p>
+            
+            <h3 class="sub-points-header-3">Function Declaration</h3>
+
+            <p>Here is how to declare a function and then call it:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">function</span> <span class="function">functionName</span>(){
+    <span class="comment">// code for function</span>
+}
+<span class="comment">//Here is how to call a function:</span>
+<span class="function">functionName()</span>
+</code>
+</pre>
+            </div>
+
+            <p>Functions call be made with and without a parameter:</p>
+
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">function</span> <span class="function">functionName</span>(){
+    <span class="comment">// code for function</span>
+}
+<span class="comment">//Here is how to call a function:</span>
+<span class="function">functionName()</span>
+<span class="keyword">function</span> <span class="function">functionName</span>(parameter){
+    <span class="comment">// code for function</span>
+}
+<span class="comment">//Here is how to call a function:</span>
+<span class="function">functionName(parameter)</span>
+<span class="comment">Functions can have more than 1 parameter, even an "unlimited" amount. </span>
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">Anonymous Function</h3>
+            <p>An anonymous functions is one without a name.</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">const</span> <span class="function">anonymousFunction</span> = <span class="keyword">function</span>() {
+    <span class="comment">// This will create an anonumous function in which the value will be stored in the variable anonumousFunction</span>
+}
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">Expression Function</h3>
+            <p>Exprerssion Functions are Anonymous Functions that return a value.</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">const</span> <span class="function">expressionFunction</span> = <span class="keyword">function</span>(n) {
+    <span class="keyword">return</span> n <span class="string-js">+</span> n
+}
+console.<span class="function">log</span>(<span class="function">expressionFunction</span>(<span class="variable">5</span>)) <span class="comment">//10</span>
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">Arrow Function</h3>
+            <p>Arrow functions are an alternative way to write a function, as they use arrows instead of the function keyword to declare a function. Here's an example of both ways in action:</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">function</span> <span class="function">add</span>(n){
+    return n <span class="punctuation">+</span> n
+}
+
+<span class="keyword">const</span> <span class="function">add</span> <span class="punctuation">=</span> n <span class="punctuation">=></span> {
+    return n <span class="punctuation">+</span> n
+}
+</code>
+</pre>
+            </div>
+
+            <h3 class="sub-points-header-3">Function w/Default Parameters</h3>
+            <p>Functions can pass default values, in which if there is no arguement passed, the default value is used.</p>
+            <div class="pre-container">
+                <pre tabindex = "0" style = "color:whitesmoke; tab-size: 4; background-color: rgb(0, 1, 55);" class="language-js">
+                    <code class="language-js">
+<span class="keyword">function</span> <span class="function">funcName</span>(param = value){
+    <span class="comment">//code</span>
+}
+</code>
+<span class="function">funcName</span>() <span class="comment">//uses default value</span>
+<span class="function">funcName</span>(arg) <span class="comment">//arguement is passed</span>
+</pre>
+            </div>
+
+
+            <p>And this is the end of my recap of Day 7 of 30DaysofJavaScript. Phew, 1 week already?
+            </p>            
+
+            <p>Day 8 should be coming out soon!
+                If you want to know when it comes out, subscribe to the blog below! Share if you found my content interesting, 
+                and consider buying me some boba with the link down below.</p>
+
+            <p>Until next time, wherever, and whenever you are, have an amazing day! Signing off.</p>
+            
+            <div class="support-boba-container">
+                <p> <em>If you liked this and would like to support, click the link below to send me a boba!!!  </em>🧋 </p>
+                <div class="buy-me-boba-btn">  
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#5F7FFF" data-emoji="🥤"  data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <script async data-uid="a62e7ea93c" src="https://crafty-trailblazer-5891.ck.page/a62e7ea93c/index.js"></script>
+            </div>
+            
+            
+            <div class="sharethis-inline-share-buttons"></div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                this.page.url = jgooco.com/blogs/my-biggest-regret-as-a-computer-engineering-graduate.html;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = blogs/my-biggest-regret-as-a-computer-engineering-graduate.html; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jgooco-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </article>                
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <div class="form-submit">
+            <form action="https://formsubmit.co/78f9fbf37e832e9cac2e940a3efeeb45" method="POST" class="form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_next" value="https://jgooco.com/thanks.html">
+                <div class="form-row">
+                    <input name="name" class="form-control" placeholder="Full Name" required>
+                    <input name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/jgooco" target="_blank" class="social"><i class="fa-brands fa-github fa-5x"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-go-oco/" target="_blank" class="social"><i class="fa-brands fa-linkedin fa-5x"></i></a>  
+        </div>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h4 class="footer-headings"><a href="/#home">Home</a></h4>
+                <ul class="anchor-link">
+                    <li><a href="/#about">About Me</a></li>
+                    <li><a href="/#project">Projects</a></li>
+                    <li><a href="/#blog">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Pages</h4>
+                <div class="blogs-link-footer">
+                    <a href="/blogs/">Blogs</a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Support</h4>
+                <div class="buy-boba-img">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jgooco" data-color="#ffffff" data-emoji="🥤" data-font="Cookie" data-text="Buy me a boba" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <h4 class="footer-headings">Newsletter</h4>
+                <p>Subscribe to the Blog!</p>
+                <script async data-uid="5e2e5a5350" src="https://crafty-trailblazer-5891.ck.page/5e2e5a5350/index.js"></script>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>Jonathan Go-Oco &copy 2022</p>
+        </div>
+    </footer>
+    <script id="dsq-count-scr" src="//jgooco-com.disqus.com/count.js" async></script>
+</body>
+</html>
